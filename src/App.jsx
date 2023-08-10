@@ -7,12 +7,20 @@ import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import logo from './assets/logo.png'
+import ScrollToTop from './components/ScrollToTop'
+import Features from './pages/Features'
+import About from './pages/About'
+import NotFound from './pages/NotFound'
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>
       <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/home" element={<Home></Home>}></Route>
+        <Route path="/Features" element={<Features></Features>}></Route>
+        <Route path="/About" element={<About></About>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
