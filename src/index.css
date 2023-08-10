@@ -12,3 +12,12 @@ body {
 .topSection {
   @apply pt-[140px] md:pt-[200px] min-h-screen;
 }
+.sectionPadding {
+  @apply lg:px-[180px];
+}
+.sectionTitle {
+  @apply text-[54.37px] font-[900];
+}
+.smText {
+  @apply text-[17.892px] font-[600];
+}
