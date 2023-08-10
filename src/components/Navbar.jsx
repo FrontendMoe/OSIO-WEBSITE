@@ -1,5 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom'
 import logo from '../assets/logo.svg'
+import blackLogo from '../assets/blackLogo.svg'
 import { useEffect, useState } from 'react'
 import MenuBurger from './MenuBurger'
 import { Fade } from 'react-reveal'
@@ -46,7 +47,11 @@ function Navbar() {
   return (
     <nav className="absolute flex w-full justify-between md:flex-row flex-col md:bg-transparent bg-[#050505] padding py-[50px] md:pt-[100px]">
       <div className="flex items-center w-full md:w-fit justify-between">
-        <img src={logo} alt="" className="w-fit" />
+        <img
+          src={currentLink === 'home' ? logo : blackLogo}
+          alt=""
+          className="w-fit"
+        />
         {/* Burger */}
         <div
           onClick={() => {
@@ -63,8 +68,19 @@ function Navbar() {
             key={index}
             style={{
               borderColor:
-                link.link === currentLink ? '#D8C596' : 'transparent',
-              color: link.link === currentLink ? '#D8C596' : '#D8C59680',
+                link.link === currentLink
+                  ? currentLink === 'home'
+                    ? '#D8C596'
+                    : '#000'
+                  : 'transparent',
+              color:
+                link.link === currentLink
+                  ? currentLink === 'home'
+                    ? '#D8C596'
+                    : '#000'
+                  : currentLink === 'home'
+                  ? '#D8C59680'
+                  : '#00000032',
             }}
             className={`text-[17.39px] cursor-pointer font-[700] w-fit text-center hover:text-[#D8C596] transition border-b-4 hover:border-[#D8C596]`}
             onClick={() => handleLinkClick(link.link)}
