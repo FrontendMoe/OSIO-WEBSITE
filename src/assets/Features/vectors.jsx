@@ -1,0 +1,16 @@
+const cheerProgramTriang = (
+  <svg
+    width="1206"
+    height="1053"
+    viewBox="0 0 1206 1053"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1127.77 1052.88L4.28485e-05 0.488549L679.306 223.088L1587.19 571.213L2184.11 997.843L1127.77 1052.88Z"
+      fill="black"
+      fillOpacity="0.03"
+    />
+  </svg>
+)
+export { cheerProgramTriang }
