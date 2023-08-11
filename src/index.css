@@ -21,3 +21,6 @@ body {
 .smText {
   @apply text-[17.892px] font-[600];
 }
+.mdText {
+  @apply text-[27.892px] font-[400];
+}
