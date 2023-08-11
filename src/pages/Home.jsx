@@ -7,6 +7,8 @@ import appStore from '../assets/AppStore.svg'
 import vectorOne from '../assets/HomeVector.svg'
 import vectorTwo from '../assets/HomeVector2.svg'
 import vectorThree from '../assets/vectorThree.svg'
+import vectorFour from '../assets/vectorFour.svg'
+
 import Phone from '../components/phone'
 import videoTwo from '../assets/videoTwo.png'
 import videoThree from '../assets/videoThree.png'
@@ -15,6 +17,8 @@ import { BsArrowRight } from 'react-icons/bs'
 import ImageBolls from '../components/ImageBolls'
 import Coaches from '../assets/Coaches.png'
 import Parents from '../assets/parents.png'
+import TeamMission from '../assets/TeamMisson.png'
+
 function Home() {
   return (
     <div className="overflow-x-hidden">
@@ -104,7 +108,29 @@ function Home() {
           />
         </div>
       </section>
-      <section className="bg-[#FFF3D8] min-h-screen"></section>
+      <section className="px-[200px] relative -space-y-[350px]   py-[150px] bg-[#FFF3D8]">
+        <div className="w-full relative z-10 flex px-[50px] justify-end">
+          <div className="aspect-square w-fit flex justify-center items-center rounded-full p-4 overflow-hidden bg-[#000]">
+            <img
+              src={TeamMission}
+              alt=""
+              className="rounded-full w-[695px] aspect-square"
+            />
+          </div>
+        </div>
+        <div className="w-full relative z-10 flex px-[50px] justify-start">
+          <div className="aspect-square w-fit flex justify-center items-center rounded-full p-4 overflow-hidden bg-[#000]">
+            <img
+              src={TeamMission}
+              alt=""
+              className="rounded-full w-[695px] aspect-square opacity-0"
+            />
+          </div>
+        </div>
+        <div className="absolute bottom-0 right-0">
+          <img src={vectorFour} alt="" />
+        </div>
+      </section>
       {/* Last Section */}
       <Join></Join>
     </div>
