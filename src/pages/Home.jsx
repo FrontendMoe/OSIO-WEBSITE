@@ -12,6 +12,7 @@ import phoneVid from '../assets/phoneVid.svg'
 import phoneTop from '../assets/phoneTop.svg'
 import Phone from '../components/phone'
 import videoTwo from '../assets/videoTwo.png'
+import videoThree from '../assets/videoThree.png'
 function Home() {
   return (
     <div>
@@ -66,6 +67,7 @@ function Home() {
           Create a profile in OSIO to engage the cheer <br /> community, offer
           coaching services to our network of{' '}
         </p>
+        <Phone video={videoThree}></Phone>
       </section>
       {/* Last Section */}
       <Join></Join>
