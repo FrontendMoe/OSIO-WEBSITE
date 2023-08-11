@@ -1,21 +1,23 @@
 import firstSecVid from '../assets/FirstSecVid.png'
 import Join from '../components/Join'
-import phoneBg from '../assets/phoneBg.svg'
+
 import logo from '../assets/blackLogo.svg'
 import playStore from '../assets/PlayStore.png'
 import appStore from '../assets/AppStore.svg'
-import phoneShadow from '../assets/phoneShadow.svg'
 import vectorOne from '../assets/HomeVector.svg'
 import vectorTwo from '../assets/HomeVector2.svg'
-import vid from '../assets/vid.png'
-import phoneVid from '../assets/phoneVid.svg'
-import phoneTop from '../assets/phoneTop.svg'
+import vectorThree from '../assets/vectorThree.svg'
 import Phone from '../components/phone'
 import videoTwo from '../assets/videoTwo.png'
 import videoThree from '../assets/videoThree.png'
+import benifits from '../assets/Benifits.png'
+import { BsArrowRight } from 'react-icons/bs'
+import ImageBolls from '../components/ImageBolls'
+import Coaches from '../assets/Coaches.png'
+import Parents from '../assets/parents.png'
 function Home() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <section className="relative h-fit min-h-screen overflow-hidden">
         <div>
           <img
@@ -59,7 +61,7 @@ function Home() {
         </p>
         <Phone video={videoTwo}></Phone>
       </section>
-      <section className="flex text-center space-y-[50px] bg-[#DED1AE] flex-col items-center py-[150px]">
+      <section className="flex  text-center space-y-[50px] bg-[#DED1AE] flex-col items-center py-[150px]">
         <p className="sectionTitle">
           Share your Experiences <br /> with Coaches & Programs
         </p>
@@ -69,6 +71,40 @@ function Home() {
         </p>
         <Phone video={videoThree}></Phone>
       </section>
+      <section className="px-[200px] relative  py-[150px] bg-[#FFF3D8]">
+        <div className="space-y-[150px] relative z-10">
+          <div className="flex justify-between ">
+            <div className="space-y-[40px] w-[500px]">
+              <p className="sectionTitle">
+                Explore the Benefits of Joining Our Community.
+              </p>
+              <p className="mdText">
+                Create a profile in OSIO to engage the cheer community, offer
+                coaching services to our network of{' '}
+              </p>
+            </div>
+            <ImageBolls></ImageBolls>
+          </div>
+          <div className="flex w-full justify-between mx-auto">
+            <ImageBolls image={Parents}></ImageBolls>
+            <ImageBolls image={Coaches}></ImageBolls>
+          </div>
+          <div className="flex  w-full justify-between mx-auto">
+            <ImageBolls image={Parents}></ImageBolls>
+            <ImageBolls image={Coaches}></ImageBolls>
+          </div>
+        </div>
+        <div className="absolute -bottom-[55%] rotate-6  z-0  -left-[20%]   w-[120%] ">
+          <img
+            src={vectorThree}
+            alt=""
+            className="w-full h-full 
+
+           "
+          />
+        </div>
+      </section>
+      <section className="bg-[#FFF3D8] min-h-screen"></section>
       {/* Last Section */}
       <Join></Join>
     </div>
