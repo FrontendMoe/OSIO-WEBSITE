@@ -22,7 +22,7 @@ body {
   @apply text-[17.892px] font-[600];
 }
 .mdText {
-  @apply text-[27.892px] font-[400];
+  @apply text-[20px] md:text-[27.892px] font-[400];
 }
 .shadowPhone {
   width: 5000px !important ;

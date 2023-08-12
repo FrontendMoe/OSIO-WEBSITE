@@ -56,7 +56,7 @@ function Home() {
             {/* Mobile Phone */}
             <Phone></Phone>
             <img src={logo} alt="" />
-            <p className="mdText w-[719px] text-center">
+            <p className="mdText md:w-[719px] text-center">
               Create a profile in OSIO to engage the cheer community, offer
               coaching services to our network of athletes and create a profile{' '}
             </p>
@@ -65,7 +65,14 @@ function Home() {
               <img src={appStore} alt="" />
             </div>
           </div>
-          <div className="absolute  -space-y-72 bottom-0 lg:-bottom-[50%] left-0 w-full">
+          <div
+            style={{
+              background:
+                'linear-gradient(to top, #FFF3D8 ,#FFF3D8, transparent)',
+            }}
+            className="absolute md:hidden z-0 w-full bottom-0 h-[40%] left-0 bg-black"
+          ></div>
+          <div className="absolute  -space-y-72 bottom-[20%] lg:-bottom-[50%] left-0 w-full">
             <img src={vectorTwo} alt="" className=" w-full" />
             <img
               src={vectorOne}
