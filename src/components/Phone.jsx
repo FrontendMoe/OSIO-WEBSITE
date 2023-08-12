@@ -3,6 +3,7 @@ import phoneBg from '../assets/phoneBg.svg'
 import phoneShadow from '../assets/shadow.svg'
 
 import vid from '../assets/vid.png'
+import firstPhoneVid from '../assets/firstPhoneVid.mp4'
 import phoneVid from '../assets/phoneVid.svg'
 import phoneTop from '../assets/phoneTop.svg'
 const Phone = ({ video = vid, bottomShadow = true }) => {
@@ -32,12 +33,15 @@ const Phone = ({ video = vid, bottomShadow = true }) => {
       />
       <img src="" alt="" />
       <div className="top-0 h-full w-fit mx-auto relative rounded-[50px] overflow-hidden z-20">
-        <img src={phoneVid} className="w-[350px]" alt="" />
-        <img
-          src={video}
+        <img src={phoneVid} className="w-[350px] relative z-0" alt="" />
+        <div className="absolute top-0 w-full h-[40px] bg-black z-20"></div>
+        <video
+          src={firstPhoneVid}
           alt=""
-          className="absolute top-0 left-0 w-full rounded-[50px] p-2 h-full"
-        />
+          loop
+          autoPlay
+          className="absolute top-0 left-0 w-[110%] h-[100%] z-0 rounded-[50px] p-2 object-cover"
+        ></video>
       </div>
     </div>
   )
