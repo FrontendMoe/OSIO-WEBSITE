@@ -9,7 +9,7 @@ import vectorTwo from '../assets/HomeVector2.svg'
 import vectorThree from '../assets/vectorThree.svg'
 import vectorFour from '../assets/vectorFour.svg'
 
-import Phone from '../components/phone'
+import Phone from '../components/Phone'
 import videoTwo from '../assets/videoTwo.png'
 import videoThree from '../assets/videoThree.png'
 import benifits from '../assets/Benifits.png'
