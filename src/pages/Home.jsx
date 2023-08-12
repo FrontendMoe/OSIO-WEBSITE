@@ -39,8 +39,8 @@ function Home() {
     playAllVideos()
   }, [])
   return (
-    <div className="overflow-x-hidden">
-      <section className="relative h-fit min-h-screen overflow-hidden">
+    <div className="overflow-hidden">
+      <section className="relative h-fit   overflow-hidden">
         <div>
           <video
             src={bgVideo}
@@ -51,7 +51,7 @@ function Home() {
             className="w-full h-[80%] object-cover absolute top-0 left-0"
           ></video>
         </div>
-        <div className="  pb-[200px] relative z-10 items-center pt-[300px]">
+        <div className="  pb-[200px] overflow-hidden relative z-10 items-center pt-[300px]">
           <div className="space-y-[61px] items-center relative flex flex-col z-10">
             {/* Mobile Phone */}
             <Phone></Phone>
@@ -65,7 +65,7 @@ function Home() {
               <img src={appStore} alt="" />
             </div>
           </div>
-          <div className="absolute -space-y-72 -bottom-[50%] left-0 w-full">
+          <div className="absolute  -space-y-72 bottom-0 lg:-bottom-[50%] left-0 w-full">
             <img src={vectorTwo} alt="" className=" w-full" />
             <img
               src={vectorOne}
@@ -76,7 +76,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="flex text-center space-y-[50px] bg-[#EBE1C7] flex-col items-center py-[150px]">
+      <section className="flex text-center overflow-hidden space-y-[50px] bg-[#EBE1C7] flex-col items-center py-[150px]">
         <p className="sectionTitle">
           Resources <br />& Community For <br /> CheerAthletes.
         </p>
@@ -86,7 +86,7 @@ function Home() {
         </p>
         <Phone video={videoTwo}></Phone>
       </section>
-      <section className="flex  text-center space-y-[50px] bg-[#DED1AE] flex-col items-center py-[150px]">
+      <section className="flex overflow-hidden  text-center space-y-[50px] bg-[#DED1AE] flex-col items-center py-[150px]">
         <p className="sectionTitle">
           Share your Experiences <br /> with Coaches & Programs
         </p>
@@ -120,7 +120,7 @@ function Home() {
       </section>
       <section className="px-[200px] relative  py-[150px] bg-[#FFF3D8]">
         <div className="space-y-[150px] relative z-10">
-          <div className="flex justify-between ">
+          <div className="flex lg:flex-row flex-col justify-between ">
             <div className="space-y-[40px] w-[500px]">
               <p className="sectionTitle">
                 Explore the Benefits of Joining Our Community.
@@ -132,13 +132,17 @@ function Home() {
             </div>
             <ImageBolls></ImageBolls>
           </div>
-          <div className="flex w-full justify-between mx-auto">
+          <div className="flex lg:flex-row flex-col w-full justify-between mx-auto">
             <ImageBolls image={Parents}></ImageBolls>
             <ImageBolls image={Coaches}></ImageBolls>
           </div>
-          <div className="flex  w-full justify-between mx-auto">
-            <ImageBolls image={Parents}></ImageBolls>
-            <ImageBolls image={Coaches}></ImageBolls>
+          <div className="flex flex-col w-full justify-between mx-auto">
+            <div className="w-[345.399px]">
+              <ImageBolls image={Parents}></ImageBolls>
+            </div>
+            <div className="w-[345.399px]">
+              <ImageBolls image={Coaches}></ImageBolls>
+            </div>
           </div>
         </div>
         <div className="absolute -bottom-[55%] rotate-6  z-0  -left-[20%]   w-[120%] ">
