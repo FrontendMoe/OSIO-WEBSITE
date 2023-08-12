@@ -19,17 +19,37 @@ import ImageBolls from '../components/ImageBolls'
 import Coaches from '../assets/Coaches.png'
 import Parents from '../assets/parents.png'
 import TeamMission from '../assets/TeamMisson.png'
-
+import bgVideo from '../assets/bgVideo.mp4'
+import { useEffect } from 'react'
 function Home() {
+  const playAllVideos = () => {
+    const videos = document.querySelectorAll('video')
+    for (let i = 0; i < videos.length; i++) {
+      const video = videos[i]
+      video.muted = true // Force mute the video
+      video.addEventListener('ended', () => {
+        video.currentTime = 0 // Reset the video to the beginning
+        video.play() // Pause the video when it ends
+      })
+
+      video.play()
+    }
+  }
+  useEffect(() => {
+    playAllVideos()
+  }, [])
   return (
     <div className="overflow-x-hidden">
       <section className="relative h-fit min-h-screen overflow-hidden">
         <div>
-          <img
-            src={firstSecVid}
+          <video
+            src={bgVideo}
             alt="firstSecVid"
-            className="w-full absolute top-0 left-0"
-          />
+            muted={true}
+            loop={true}
+            playsInline
+            className="w-full h-[80%] object-cover absolute top-0 left-0"
+          ></video>
         </div>
         <div className="  pb-[200px] relative z-10 items-center pt-[300px]">
           <div className="space-y-[61px] items-center relative flex flex-col z-10">
@@ -95,7 +115,7 @@ function Home() {
             alt=""
             className="absolute  scale-105  -left-[240px] overflow-visible top-[270px]"
           />
-          <Phone video={videoThree}></Phone>
+          <Phone video={videoThree} bottomShadow={false}></Phone>
         </div>
       </section>
       <section className="px-[200px] relative  py-[150px] bg-[#FFF3D8]">

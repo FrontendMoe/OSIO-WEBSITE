@@ -5,10 +5,21 @@ import phoneShadow from '../assets/shadow.svg'
 import vid from '../assets/vid.png'
 import phoneVid from '../assets/phoneVid.svg'
 import phoneTop from '../assets/phoneTop.svg'
-const Phone = ({ video = vid }) => {
+const Phone = ({ video = vid, bottomShadow = true }) => {
   return (
-    <div className="relative  overflow-visible mx-auto  w-[375.436px] h-fit z-10">
-      <div className="w-full blur-2xl h-full absolute top-0 bg-black"></div>
+    <div className="relative  overflow-visible mx-auto w-[375.436px] h-fit z-10">
+      {bottomShadow ? (
+        <img
+          src={phoneShadow}
+          width={'495px'}
+          height={'772px'}
+          style={{ filter: 'blur(45px)' }}
+          className="absolute shadow  w-[495px] h-[772px]  left-0 z-0 -bottom-[200px] "
+          alt=""
+        />
+      ) : (
+        <div className="w-full blur-3xl h-full absolute top-0 bg-black"></div>
+      )}
       <img
         src={phoneTop}
         className="absolute top-0 w-1/2 left-1/2 -translate-x-1/2 z-30"
@@ -19,7 +30,8 @@ const Phone = ({ video = vid }) => {
         alt=""
         className="w-[375.436px] absolute top-1/2 -translate-y-1/2 z-10"
       />
-      <div className="top-0  h-full w-fit mx-auto relative rounded-[50px] overflow-hidden z-20">
+      <img src="" alt="" />
+      <div className="top-0 h-full w-fit mx-auto relative rounded-[50px] overflow-hidden z-20">
         <img src={phoneVid} className="w-[350px]" alt="" />
         <img
           src={video}
