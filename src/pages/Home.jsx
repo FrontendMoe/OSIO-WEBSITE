@@ -8,7 +8,8 @@ import vectorOne from '../assets/HomeVector.svg'
 import vectorTwo from '../assets/HomeVector2.svg'
 import vectorThree from '../assets/vectorThree.svg'
 import vectorFour from '../assets/vectorFour.svg'
-
+import discoverSideVid3 from '../assets/discoverSideVid3.png'
+import discoverSideVid from '../assets/discoverSideVid.png'
 import Phone from '../components/Phone'
 import videoTwo from '../assets/videoTwo.png'
 import videoThree from '../assets/videoThree.png'
@@ -69,11 +70,33 @@ function Home() {
         <p className="sectionTitle">
           Share your Experiences <br /> with Coaches & Programs
         </p>
-        <p className="mdText">
+        <p className="mdText pb-[150px]">
           Create a profile in OSIO to engage the cheer <br /> community, offer
           coaching services to our network of{' '}
         </p>
-        <Phone video={videoThree}></Phone>
+        <div className="w-fit  relative ">
+          <img
+            src={discoverSideVid}
+            alt=""
+            className="absolute scale-105 -right-[240px] -top-[50px]"
+          />
+          <img
+            src={discoverSideVid}
+            alt=""
+            className="absolute  scale-105  -right-[240px] top-[270px]"
+          />
+          <img
+            src={discoverSideVid3}
+            alt=""
+            className="absolute  scale-105  -left-[240px] overflow-visible -top-[50px]"
+          />
+          <img
+            src={discoverSideVid3}
+            alt=""
+            className="absolute  scale-105  -left-[240px] overflow-visible top-[270px]"
+          />
+          <Phone video={videoThree}></Phone>
+        </div>
       </section>
       <section className="px-[200px] relative  py-[150px] bg-[#FFF3D8]">
         <div className="space-y-[150px] relative z-10">
