@@ -87,7 +87,7 @@ function Home() {
         <p className="sectionTitle">
           Resources <br />& Community For <br /> CheerAthletes.
         </p>
-        <p className="mdText w-[750px]">
+        <p className="mdText md:w-[750px]">
           Create a profile in OSIO to engage the cheer community, offer coaching
           services to our network of{' '}
         </p>
@@ -125,10 +125,10 @@ function Home() {
           <Phone video={videoThree} bottomShadow={false}></Phone>
         </div>
       </section>
-      <section className="px-[200px] relative  py-[150px] bg-[#FFF3D8]">
+      <section className="lg:px-[200px] px-[50px] relative  py-[150px] bg-[#FFF3D8]">
         <div className="space-y-[150px] relative z-10">
-          <div className="flex lg:flex-row flex-col justify-between ">
-            <div className="space-y-[40px] w-[500px]">
+          <div className="flex lg:flex-row space-y-10 lg:space-y-0 flex-col justify-between ">
+            <div className="space-y-[40px] md:w-[500px]">
               <p className="sectionTitle">
                 Explore the Benefits of Joining Our Community.
               </p>
@@ -168,7 +168,7 @@ function Home() {
             <img
               src={TeamMission}
               alt=""
-              className="rounded-full w-[695px] aspect-square"
+              className="rounded-full md:w-[695px] aspect-square"
             />
           </div>
         </div>
@@ -177,7 +177,7 @@ function Home() {
             <img
               src={TeamMission}
               alt=""
-              className="rounded-full w-[695px] aspect-square opacity-0"
+              className="rounded-full md:w-[695px] aspect-square opacity-0"
             />
           </div>
         </div>

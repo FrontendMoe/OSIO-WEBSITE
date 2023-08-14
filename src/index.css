@@ -16,10 +16,10 @@ body {
   @apply lg:px-[180px];
 }
 .sectionTitle {
-  @apply text-[54.37px] font-[900];
+  @apply text-[30px] md:text-[54.37px] font-[900];
 }
 .smText {
-  @apply text-[17.892px] font-[600];
+  @apply text-[14px] md:text-[17.892px] font-[600];
 }
 .mdText {
   @apply text-[20px] md:text-[27.892px] font-[400];

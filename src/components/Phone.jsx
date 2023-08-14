@@ -6,21 +6,22 @@ import vid from '../assets/vid.png'
 import firstPhoneVid from '../assets/firstPhoneVid.mp4'
 import phoneVid from '../assets/phoneVid.svg'
 import phoneTop from '../assets/phoneTop.svg'
-const Phone = ({ video = vid, bottomShadow = true }) => {
+const Phone = ({ video = vid, bottomShadow = true, noShadow = false }) => {
   return (
     <div className="relative  overflow-visible mx-auto w-[375.436px] h-fit z-10">
-      {bottomShadow ? (
-        <img
-          src={phoneShadow}
-          width={'495px'}
-          height={'772px'}
-          style={{ filter: 'blur(45px)' }}
-          className="absolute shadow  w-[495px] h-[772px]  left-0 z-0 -bottom-[200px] "
-          alt=""
-        />
-      ) : (
-        <div className="w-full blur-3xl h-full absolute top-0 bg-black"></div>
-      )}
+      {!noShadow &&
+        (bottomShadow ? (
+          <img
+            src={phoneShadow}
+            width={'495px'}
+            height={'772px'}
+            style={{ filter: 'blur(45px)' }}
+            className="absolute shadow  w-[495px] h-[772px]  left-0 z-0 -bottom-[200px] "
+            alt=""
+          />
+        ) : (
+          <div className="w-full blur-3xl h-full absolute top-0 bg-black"></div>
+        ))}
       <img
         src={phoneTop}
         className="absolute top-0 w-1/2 left-1/2 -translate-x-1/2 z-30"
@@ -40,7 +41,7 @@ const Phone = ({ video = vid, bottomShadow = true }) => {
           alt=""
           loop
           autoPlay
-          className="absolute top-0 left-0 w-[110%] h-[100%] z-0 rounded-[50px] p-2 object-cover"
+          className="absolute top-0 left-0 w-[115%] md:w-[110%] h-[100%] z-0 rounded-[50px] p-2 object-cover"
         ></video>
       </div>
     </div>
