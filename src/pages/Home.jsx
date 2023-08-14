@@ -21,6 +21,11 @@ import Parents from '../assets/parents.png'
 import TeamMission from '../assets/TeamMisson.png'
 import bgVideo from '../assets/bgVideo.mp4'
 import { useEffect } from 'react'
+import researchSideVid1 from '../assets/researchSideVid1.png'
+import researchSideVid2 from '../assets/researchSideVid2.png'
+import researchSideVid3 from '../assets/researchSideVid3.png'
+import researchSideVid4 from '../assets/researchSideVid4.png'
+
 function Home() {
   const playAllVideos = () => {
     const videos = document.querySelectorAll('video')
@@ -91,16 +96,6 @@ function Home() {
           Create a profile in OSIO to engage the cheer community, offer coaching
           services to our network of{' '}
         </p>
-        <Phone video={videoTwo}></Phone>
-      </section>
-      <section className="flex overflow-hidden  text-center space-y-[50px] bg-[#DED1AE] flex-col items-center py-[150px]">
-        <p className="sectionTitle">
-          Share your Experiences <br /> with Coaches & Programs
-        </p>
-        <p className="mdText pb-[150px]">
-          Create a profile in OSIO to engage the cheer <br /> community, offer
-          coaching services to our network of{' '}
-        </p>
         <div className="w-fit  relative ">
           <img
             src={discoverSideVid}
@@ -121,6 +116,38 @@ function Home() {
             src={discoverSideVid3}
             alt=""
             className="absolute  scale-105  -left-[240px] overflow-visible top-[270px]"
+          />
+          <Phone video={videoThree} bottomShadow={false}></Phone>
+        </div>
+      </section>
+      <section className="flex overflow-hidden  text-center space-y-[50px] bg-[#DED1AE] flex-col items-center py-[150px]">
+        <p className="sectionTitle">
+          Share your Experiences <br /> with Coaches & Programs
+        </p>
+        <p className="mdText pb-[150px]">
+          Create a profile in OSIO to engage the cheer <br /> community, offer
+          coaching services to our network of{' '}
+        </p>
+        <div className="w-fit  relative ">
+          <img
+            src={researchSideVid2}
+            alt=""
+            className="absolute scale-105 z-10 rotate-[0deg] -right-[240px] -top-[50px]"
+          />
+          <img
+            src={researchSideVid1}
+            alt=""
+            className="absolute  scale-125 rotate-[0deg] -right-[240px] top-[200px]"
+          />
+          <img
+            src={researchSideVid4}
+            alt=""
+            className="absolute  scale-105 z-10 rotate-[0deg] -left-[240px] overflow-visible -top-[50px]"
+          />
+          <img
+            src={researchSideVid3}
+            alt=""
+            className="absolute  scale-125 rotate-[0deg]  -left-[240px] overflow-visible top-[200px]"
           />
           <Phone video={videoThree} bottomShadow={false}></Phone>
         </div>
