@@ -10,7 +10,7 @@ import {
   purpleTriang,
 } from '../assets/icons'
 import Join from '../components/Join'
-import Phone from '../components/phone'
+import Phone from '../components/Phone'
 
 function Features() {
   return (
