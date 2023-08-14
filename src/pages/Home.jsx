@@ -152,24 +152,46 @@ function Home() {
           />
           <Phone video={videoThree} bottomShadow={false}></Phone>
         </div>
-        <div className="flex items-start h-fit  justify-center space-x-[40px]  w-full">
-          <div className="bg-black p-2 rounded-full">
-            <div className="rounded-full p-14 bg-[#EBE1C7]  overflow-hidden ">
-              <img
-                src={ExperienceSurvey}
-                alt=""
-                className="     object-cover"
-              />
+        <div className="flex items-start h-fit  justify-center   w-full">
+          <div className="w-[367px] space-y-[80px]">
+            <div className="bg-black p-2 w-fit rounded-full">
+              <div className="rounded-full p-14 bg-[#EBE1C7]  overflow-hidden ">
+                <img
+                  src={ExperienceSurvey}
+                  alt=""
+                  className="     object-cover"
+                />
+              </div>
+            </div>
+            <div className="text-center">
+              <p className="sectionTitle text-[52px]">
+                Experience <br /> Surveys
+              </p>
+              <p className="mdText">
+                Create a profile in OSIO to engage the cheer community, offer
+                coaching services to our network of{' '}
+              </p>
             </div>
           </div>
-          <div className=" h-full pt-10">{researchLines}</div>
-          <div className="bg-black p-2 rounded-full">
-            <div className="rounded-full p-14 bg-[#EBE1C7]  overflow-hidden ">
-              <img
-                src={ExperienceSurvey}
-                alt=""
-                className="     object-cover"
-              />
+          <div className=" h-full pt-10 ">{researchLines}</div>
+          <div className="w-[367px] flex flex-col items-end space-y-[80px]">
+            <div className="bg-black p-2 w-fit rounded-full">
+              <div className="rounded-full p-14 bg-[#EBE1C7]  overflow-hidden ">
+                <img
+                  src={ExperienceSurvey}
+                  alt=""
+                  className="     object-cover"
+                />
+              </div>
+            </div>
+            <div className="text-center">
+              <p className="sectionTitle text-[52px]">
+                Experience <br /> Surveys
+              </p>
+              <p className="mdText">
+                Create a profile in OSIO to engage the cheer community, offer
+                coaching services to our network of{' '}
+              </p>
             </div>
           </div>
         </div>
