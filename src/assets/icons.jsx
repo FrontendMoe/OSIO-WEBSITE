@@ -54,5 +54,49 @@ const orangeTriang = (
     />
   </svg>
 )
+const greenPhoneShadow = (
+  <svg
+    width="434"
+    height="664"
+    viewBox="0 0 434 664"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M-420.939 362.285C-444.994 305.968 -419.041 240.354 -362.969 215.732L128.312 2.29497e-05L424.216 692.737C448.271 749.054 422.317 814.668 366.246 839.29L-125.035 1055.02L-420.939 362.285Z"
+      fill="#68AF8D"
+    />
+  </svg>
+)
+const purpleTriang = (
+  <svg
+    width="37"
+    height="34"
+    viewBox="0 0 37 34"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M37 0H0V34L37 0Z" fill="#762C56" />
+  </svg>
+)
+const blueTriang = (
+  <svg
+    width="37"
+    height="34"
+    viewBox="0 0 37 34"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M37 0H0V34L37 0Z" fill="#9A9FCE" />
+  </svg>
+)
 
-export { greenTriang, brownTriang, orangePhoneShadow, orangeTriang }
+export {
+  greenTriang,
+  brownTriang,
+  greenPhoneShadow,
+  orangePhoneShadow,
+  orangeTriang,
+  purpleTriang,
+  blueTriang,
+}
