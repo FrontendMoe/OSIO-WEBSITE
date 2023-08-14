@@ -19,6 +19,8 @@ import ImageBolls from '../components/ImageBolls'
 import Coaches from '../assets/Coaches.png'
 import Parents from '../assets/parents.png'
 import TeamMission from '../assets/TeamMisson.png'
+// Videos
+import TeamMissionVid from '../assets/TeamMissionVid.mp4'
 import bgVideo from '../assets/bgVideo.mp4'
 import { useEffect } from 'react'
 import researchSideVid1 from '../assets/researchSideVid1.png'
@@ -236,11 +238,15 @@ function Home() {
       <section className="px-[200px] relative -space-y-[350px]   py-[150px] bg-[#FFF3D8]">
         <div className="w-full relative z-10 flex px-[50px] justify-end">
           <div className="aspect-square w-fit flex justify-center items-center rounded-full p-4 overflow-hidden bg-[#000]">
-            <img
-              src={TeamMission}
+            <video
+              src={TeamMissionVid}
               alt=""
-              className="rounded-full md:w-[695px] aspect-square"
-            />
+              muted={true}
+              loop={true}
+              playsInline
+              autoPlay
+              className="rounded-full md:w-[695px] aspect-square object-cover object-center"
+            ></video>
           </div>
         </div>
         <div className="w-full relative z-10 flex px-[50px] justify-start">
@@ -248,7 +254,7 @@ function Home() {
             <img
               src={TeamMission}
               alt=""
-              className="rounded-full md:w-[695px] aspect-square opacity-0"
+              className="rounded-full opacity-0 md:w-[695px] aspect-square"
             />
           </div>
         </div>
