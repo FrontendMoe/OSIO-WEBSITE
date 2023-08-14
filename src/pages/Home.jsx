@@ -25,7 +25,8 @@ import researchSideVid1 from '../assets/researchSideVid1.png'
 import researchSideVid2 from '../assets/researchSideVid2.png'
 import researchSideVid3 from '../assets/researchSideVid3.png'
 import researchSideVid4 from '../assets/researchSideVid4.png'
-
+import { researchLines } from '../assets/icons'
+import ExperienceSurvey from '../assets/ExperienceSurvey (2).png'
 function Home() {
   const playAllVideos = () => {
     const videos = document.querySelectorAll('video')
@@ -150,6 +151,27 @@ function Home() {
             className="absolute  scale-125 rotate-[0deg]  -left-[240px] overflow-visible top-[200px]"
           />
           <Phone video={videoThree} bottomShadow={false}></Phone>
+        </div>
+        <div className="flex items-start h-fit  justify-center space-x-[40px]  w-full">
+          <div className="bg-black p-2 rounded-full">
+            <div className="rounded-full p-14 bg-[#EBE1C7]  overflow-hidden ">
+              <img
+                src={ExperienceSurvey}
+                alt=""
+                className="     object-cover"
+              />
+            </div>
+          </div>
+          <div className=" h-full pt-10">{researchLines}</div>
+          <div className="bg-black p-2 rounded-full">
+            <div className="rounded-full p-14 bg-[#EBE1C7]  overflow-hidden ">
+              <img
+                src={ExperienceSurvey}
+                alt=""
+                className="     object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
       <section className="lg:px-[200px] px-[50px] relative  py-[150px] bg-[#FFF3D8]">
