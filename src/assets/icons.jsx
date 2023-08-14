@@ -91,6 +91,20 @@ const blueTriang = (
   </svg>
 )
 
+const purplePhoneShadow = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="257"
+    height="458"
+    viewBox="0 0 257 458"
+    fill="none"
+  >
+    <path
+      d="M369.111 17.7482C418.298 19.189 462.847 54.0996 475.365 101.013L647.712 746.906L77.7663 822.382C22.3901 829.715 -32.977 791.605 -45.8997 737.261L-221.105 0.460266L369.111 17.7482Z"
+      fill="#9A9FCE"
+    />
+  </svg>
+)
 export {
   greenTriang,
   brownTriang,
@@ -99,4 +113,5 @@ export {
   orangeTriang,
   purpleTriang,
   blueTriang,
+  purplePhoneShadow,
 }

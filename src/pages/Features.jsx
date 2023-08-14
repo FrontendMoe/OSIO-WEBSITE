@@ -6,6 +6,7 @@ import {
   greenTriang,
   orangePhoneShadow,
   orangeTriang,
+  purplePhoneShadow,
   purpleTriang,
 } from '../assets/icons'
 import Join from '../components/Join'
@@ -143,8 +144,8 @@ function Features() {
             {cheerProgramTriang}
           </div>
         </div>
-        <div className="h-fit w-fit md:mr-[100px] -bottom-[200px] relative flex pl-40  justify-center items-center">
-          <div className="bg-[#9C7431] absolute left-0 -bottom-[15px] rounded-[100px] w-full h-[80%]"></div>
+        <div className="h-fit scale-100 w-fit md:mr-[100px] -bottom-[200px] relative flex pl-40  justify-center items-center">
+          <div className="bg-[#762C56] w-[500px] absolute right-2 top-10 overflow-hidden h-[700px]   rounded-[100px]  "></div>{' '}
           <Phone noShadow={true}></Phone>
         </div>
       </section>
@@ -161,9 +162,9 @@ function Features() {
               coaching services to our network of{' '}
             </p>
           </div>
-          <div className="  h-[600px] overflow-hidden w-[519.049px] right-20 -top-[200px]  relative flex pl-40  justify-center items-center">
-            <div className="bg-[#9C7431] absolute left-0 -bottom-[0] rounded-b-[100px] w-full h-[400px]"></div>
-            <div className="absolute -bottom-[150px] right-0">
+          <div className="  h-[600px] scale-90 overflow-hidden w-[519.049px] right-24 -top-[210px] rounded-bl-[100px]   relative flex pl-40  justify-center items-center">
+            <div className="bg-[#9A9FCE] w-[800px] absolute right-2 bottom-0 overflow-hidden h-[400px]   rounded-[100px]  "></div>{' '}
+            <div className="absolute -bottom-[150px] -right-0">
               <Phone noShadow={true}></Phone>
             </div>
           </div>
