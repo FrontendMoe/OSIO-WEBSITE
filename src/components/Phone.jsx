@@ -6,7 +6,15 @@ import vid from '../assets/vid.png'
 import firstPhoneVid from '../assets/firstPhoneVid.mp4'
 import phoneVid from '../assets/phoneVid.svg'
 import phoneTop from '../assets/phoneTop.svg'
-const Phone = ({ video = vid, bottomShadow = true, noShadow = false }) => {
+const Phone = ({
+  video = firstPhoneVid,
+  width = 115,
+  high = 100,
+  bottomShadow = true,
+  noShadow = false,
+  top = 0,
+  left = 0,
+}) => {
   return (
     <div className="relative  overflow-visible mx-auto w-[375.436px] h-fit z-10">
       {!noShadow &&
@@ -37,11 +45,17 @@ const Phone = ({ video = vid, bottomShadow = true, noShadow = false }) => {
         <img src={phoneVid} className="w-[350px] relative z-0" alt="" />
         <div className="absolute top-0 w-full h-[40px] bg-black z-20"></div>
         <video
-          src={firstPhoneVid}
+          src={video}
           alt=""
           loop
           autoPlay
-          className="absolute top-0 left-0 w-[115%] md:w-[110%] h-[100%] z-0 rounded-[50px] p-2 object-cover"
+          style={{
+            height: high + '%',
+            width: width + '%',
+            top: top + '%',
+            left: left + '%',
+          }}
+          className={`absolute top-0 left-0   z-0 rounded-[50px] p-2 object-cover`}
         ></video>
       </div>
     </div>

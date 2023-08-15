@@ -11,8 +11,8 @@ import vectorFour from '../assets/vectorFour.svg'
 import discoverSideVid3 from '../assets/discoverSideVid3.png'
 import discoverSideVid from '../assets/discoverSideVid.png'
 import Phone from '../components/Phone'
-import videoTwo from '../assets/videoTwo.png'
 import videoThree from '../assets/videoThree.png'
+import videoTwo from '../assets/videoTwo.mp4'
 import benifits from '../assets/Benifits.png'
 import { BsArrowRight } from 'react-icons/bs'
 import ImageBolls from '../components/ImageBolls'
@@ -120,7 +120,14 @@ function Home() {
             alt=""
             className="absolute  scale-105  -left-[240px] overflow-visible top-[270px]"
           />
-          <Phone video={videoThree} bottomShadow={false}></Phone>
+          <Phone
+            video={videoTwo}
+            high={150}
+            width={150}
+            left={0}
+            bottomShadow={false}
+            top={-42}
+          ></Phone>
         </div>
       </section>
       <section className="flex overflow-hidden  text-center space-y-[50px] bg-[#DED1AE] flex-col items-center py-[150px]">
