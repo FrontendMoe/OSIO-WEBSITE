@@ -59,7 +59,7 @@ function Home() {
             className="w-full h-[80%] object-cover absolute top-0 left-0"
           ></video>
         </div>
-        <div className="  pb-[200px] overflow-hidden relative z-10 items-center pt-[300px]">
+        <div className="  pb-[200px] overflow-hidden relative z-10 items-center pt-[200px] md:pt-[300px]">
           <div className="space-y-[61px] items-center relative flex flex-col z-10">
             {/* Mobile Phone */}
             <Phone></Phone>
