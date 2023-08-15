@@ -27,7 +27,13 @@ import researchSideVid1 from '../assets/researchSideVid1.png'
 import researchSideVid2 from '../assets/researchSideVid2.png'
 import researchSideVid3 from '../assets/researchSideVid3.png'
 import researchSideVid4 from '../assets/researchSideVid4.png'
-import { researchLines } from '../assets/icons'
+import {
+  horizontalLineOne,
+  horizontalLineTwo,
+  researchLines,
+  verticalLineOne,
+  verticalLineTwo,
+} from '../assets/icons'
 import ExperienceSurvey from '../assets/ExperienceSurvey (2).png'
 function Home() {
   const playAllVideos = () => {
@@ -226,15 +232,23 @@ function Home() {
             </div>
             <ImageBolls></ImageBolls>
           </div>
-          <div className="flex lg:flex-row flex-col w-full justify-between mx-auto">
-            <ImageBolls image={Parents}></ImageBolls>
-            <ImageBolls image={Coaches}></ImageBolls>
-          </div>
-          <div className="flex flex-col w-full justify-between mx-auto">
-            <div className="w-[345.399px]">
-              <ImageBolls image={Parents}></ImageBolls>
+          <div>
+            <div className="justify-around flex">
+              <div>{verticalLineOne}</div>
+              <div>{verticalLineOne}</div>
             </div>
-            <div className="w-[345.399px]">
+            <div className="flex md:flex-row flex-col w-full justify-center mx-auto">
+              <ImageBolls image={Parents}></ImageBolls>
+              <div className="pt-[150px]">{horizontalLineTwo}</div>
+              <ImageBolls image={Coaches}></ImageBolls>
+            </div>
+            <div className="justify-around flex">
+              <div>{verticalLineTwo}</div>
+              <div>{verticalLineTwo}</div>
+            </div>
+            <div className="flex md:flex-row flex-col items-end w-full justify-center mx-auto">
+              <ImageBolls image={Parents}></ImageBolls>
+              <div className="pb-[150px]">{horizontalLineTwo}</div>
               <ImageBolls image={Coaches}></ImageBolls>
             </div>
           </div>
