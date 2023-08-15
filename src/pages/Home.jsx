@@ -250,12 +250,29 @@ function Home() {
           </div>
         </div>
         <div className="w-full relative z-10 flex px-[50px] justify-start">
-          <div className="aspect-square w-fit flex justify-center items-center rounded-full p-4 overflow-hidden bg-[#000]">
+          <div className="aspect-square relative w-fit flex justify-center items-center rounded-full p-4 overflow-hidden bg-[#000]">
             <img
               src={TeamMission}
               alt=""
               className="rounded-full opacity-0 md:w-[695px] aspect-square"
             />
+            <div className="absolute link space-y-[30px]  top-0 left-1/2 -translate-x-1/2 w-1/2 mx-auto flex justify-center flex-col items-center h-full text-start ">
+              <p className="text-[#EED9B5] text-[36px] font-bold">
+                Team + Mission Built
+              </p>
+              <p className="text-[#FFE6A4] text-[36px] font-[500]">
+                for and by the Cheer Community
+              </p>
+              <p className="text-[16.188px] leading-[33.994px] text-[#FFF3D8]">
+                Create a profile in OSIO to engage the cheer community, offer
+                coaching services to our network of athletes and create a
+                profile to sh
+              </p>
+              <div className="text-[#FFF3D8]  text-start  w-full font-[600] space-x-4 flex items-center">
+                <p>Learn More </p>
+                <BsArrowRight className="text-xl hoverState"></BsArrowRight>
+              </div>
+            </div>
           </div>
         </div>
         <div className="absolute bottom-0 right-0">

@@ -29,3 +29,14 @@ body {
   height: 1000px !important ;
   @apply border;
 }
+.link:hover .hoverState {
+  transition: all 0.5 ease-in;
+  @apply translate-x-2;
+}
+.hoverState {
+  transition: all 0.5 ease-in;
+  @apply transition-all;
+}
+.link:hover {
+  @apply cursor-pointer;
+}
