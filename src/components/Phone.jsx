@@ -47,7 +47,9 @@ const Phone = ({
         <video
           src={video}
           alt=""
-          loop
+          muted={true}
+          loop={true}
+          playsInline
           autoPlay
           style={{
             height: high + '%',

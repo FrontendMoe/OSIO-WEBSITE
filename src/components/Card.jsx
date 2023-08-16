@@ -18,6 +18,10 @@ function Card({
       <div className="absolute flex p-4 flex-col justify-between top-0 left-0 w-full h-full ">
         <video
           src={vid}
+          muted={true}
+          loop={true}
+          playsInline
+          autoPlay
           className="object-cover absolute top-0  h-full w-full left-0"
         ></video>
         {showCorner && (

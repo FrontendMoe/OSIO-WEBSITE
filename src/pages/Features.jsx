@@ -14,7 +14,7 @@ import Phone from '../components/Phone'
 
 function Features() {
   return (
-    <div className="text-center md:text-start">
+    <div className="text-center overflow-x-hidden md:text-start">
       <section className="sectionPadding  topSection py-[100px] bg-[#EBE1C7] space-y-[30px] flex flex-col justify-center">
         <p className="sectionTitle font-[900] lg:w-[700.984px]">
           Empowering & Connecting All Members of the Cheer Community.
@@ -131,7 +131,7 @@ function Features() {
         </div>
       </section>
       {/* Cheer Program */}
-      <section className="bg-[#F1DFB5] flex justify-between   min-h-screen relative">
+      <section className="bg-[#F1DFB5] md:pt-0 pt-[100px] md:flex-row flex-col flex justify-between   min-h-screen relative">
         <div className="flex sectionPadding flex-col justify-center">
           <p className="sectionTitle">
             Cheer <br /> Program <br /> Staff
@@ -152,8 +152,8 @@ function Features() {
 
       {/* Facility Manager */}
       <section className="bg-[#FFF3D8] sectionPadding min-h-screen">
-        <div className="min-h-[70vh] flex justify-between border-b-[3px] border-[#DBD3BA] ">
-          <div className="flex flex-col justify-center">
+        <div className="min-h-[70vh] flex md:flex-row flex-col-reverse  justify-around md:justify-between border-b-[3px] border-[#DBD3BA] ">
+          <div className="flex-1 py-[50px] md:mt-0  mt-[-150px]  flex-col justify-center">
             <p className="sectionTitle ">
               Facility <br /> Managers
             </p>
