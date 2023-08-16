@@ -186,6 +186,26 @@ const horizontalLineTwo = (
     />
   </svg>
 )
+const closeX = (
+  <svg
+    width="20"
+    height="100"
+    viewBox="0 0 19 19"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M7.26807 0.912598L11.7626 18.4137"
+      stroke="white"
+      stroke-width="3.58524"
+    />
+    <path
+      d="M18.2658 7.41601L0.764733 11.9105"
+      stroke="white"
+      stroke-width="3.58524"
+    />
+  </svg>
+)
 
 export {
   greenTriang,
@@ -201,4 +221,5 @@ export {
   verticalLineTwo,
   horizontalLineOne,
   horizontalLineTwo,
+  closeX,
 }

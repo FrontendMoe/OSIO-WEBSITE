@@ -38,6 +38,7 @@ import {
 import ExperienceSurvey from '../assets/ExperienceSurvey (2).png'
 //
 import collegiate from '../assets/Collegiate.png'
+import Card from '../components/Card'
 function Home() {
   const playAllVideos = () => {
     const videos = document.querySelectorAll('video')
@@ -109,11 +110,9 @@ function Home() {
           services to our network of{' '}
         </p>
         <div className="w-fit  relative ">
-          <img
-            src={discoverSideVid}
-            alt=""
-            className="absolute scale-105 -right-[240px] -top-[50px]"
-          />
+          <div className="absolute  -right-[240px] rotate-[30deg] top-[0]">
+            <Card img={discoverSideVid}></Card>
+          </div>
           <img
             src={discoverSideVid}
             alt=""
