@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 const handleScroll = () => {
-  const elements = document.querySelectorAll('p')
+  const elements = document.querySelectorAll('p ,.fade')
   elements.forEach((element) => {
     const elementTop = element.getBoundingClientRect().top
     const elementBottom = element.getBoundingClientRect().bottom
