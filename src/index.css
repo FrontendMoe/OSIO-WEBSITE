@@ -40,3 +40,17 @@ body {
 .link:hover {
   @apply cursor-pointer;
 }
+/* Fade Effect */
+
+p {
+  opacity: 0;
+}
+.fadeIn {
+  opacity: 1;
+  transition: opacity 1s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+.fadeOut {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Adjust the duration and easing as needed */
+}

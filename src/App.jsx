@@ -11,11 +11,13 @@ import ScrollToTop from './components/ScrollToTop'
 import Features from './pages/Features'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
+import { FadeEffect } from './components/FadeEffect'
 function App() {
   const [currentLink, setCurrentLink] = useState(null)
 
   return (
     <BrowserRouter>
+      <FadeEffect></FadeEffect>
       <ScrollToTop></ScrollToTop>
       <Navbar
         currentLink={currentLink}

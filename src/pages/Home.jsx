@@ -247,7 +247,7 @@ function Home() {
             </div>
             <div className="text-center">
               <p className="sectionTitle text-[52px]">
-                Experience <br /> Surveys
+                Experience <br /> Scores
               </p>
               <p className="mdText">
                 Create a profile in OSIO to engage the cheer community, offer
