@@ -139,7 +139,7 @@ function Home() {
           ></Phone>
         </div>
       </section>
-      <section className="flex overflow-hidden  text-center space-y-[50px] bg-[#DED1AE] flex-col items-center py-[150px]">
+      <section className="flex overflow-hidden sectionPadding  text-center space-y-[50px] bg-[#DED1AE] flex-col items-center py-[150px]">
         <p className="sectionTitle">
           Share your Experiences <br /> with Coaches & Programs
         </p>
@@ -177,9 +177,9 @@ function Home() {
             top={-42}
           ></Phone>
         </div>
-        <div className="flex items-start h-fit  justify-center   w-full">
-          <div className="w-[367px] space-y-[80px]">
-            <div className="bg-black p-2 w-fit rounded-full">
+        <div className="flex md:items-start h-fit md:flex-row space-y-[30px] md:space-y-0  flex-col items-center  justify-center   w-full">
+          <div className="md:w-[367px]   space-y-[80px]">
+            <div className="bg-black mx-auto p-2 w-fit rounded-full">
               <div className="rounded-full p-14 bg-[#EBE1C7]  overflow-hidden ">
                 <img
                   src={ExperienceSurvey}
@@ -198,8 +198,9 @@ function Home() {
               </p>
             </div>
           </div>
-          <div className=" h-full pt-10 ">{researchLines}</div>
-          <div className="w-[367px] flex flex-col items-end space-y-[80px]">
+          <div className="flex justify-center md:hidden">{verticalLineTwo}</div>
+          <div className=" h-full pt-10 md:block hidden">{researchLines}</div>
+          <div className="md:w-[367px] flex flex-col items-center md:items-end space-y-[80px]">
             <div className="bg-black p-2 w-fit rounded-full">
               <div className="rounded-full p-14 bg-[#EBE1C7]  overflow-hidden ">
                 <img
