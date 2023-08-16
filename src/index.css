@@ -10,10 +10,10 @@ body {
   @apply px-[30px] md:px-[88px];
 }
 .topSection {
-  @apply pt-[100px] md:pt-[200px] min-h-screen;
+  @apply pt-[200px] md:pt-[200px];
 }
 .sectionPadding {
-  @apply lg:px-[180px];
+  @apply lg:px-[180px] px-[50px];
 }
 .sectionTitle {
   @apply text-[30px] md:text-[54.37px] font-[900];

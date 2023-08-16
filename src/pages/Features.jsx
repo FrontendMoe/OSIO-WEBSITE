@@ -15,11 +15,11 @@ import Phone from '../components/Phone'
 function Features() {
   return (
     <div>
-      <section className="sectionPadding  topSection bg-[#EBE1C7] space-y-[30px] flex flex-col justify-center">
-        <p className="text-[50.99px] font-[900] lg:w-[700.984px]">
+      <section className="sectionPadding  topSection py-[100px] bg-[#EBE1C7] space-y-[30px] flex flex-col justify-center">
+        <p className="sectionTitle font-[900] lg:w-[700.984px]">
           Empowering & Connecting All Members of the Cheer Community.
         </p>
-        <p className="text-[22.231px] font-[400] lg:w-[750px]">
+        <p className="mdText font-[400] lg:w-[750px]">
           Create a profile in OSIO to engage the cheer community, offer coaching
           services to our network of athletes and create a profile{' '}
         </p>
@@ -34,14 +34,14 @@ function Features() {
             Create a profile in OSIO to engage the cheer <br /> community, offer
             coaching services to our network of
           </p>
-          <div className="  items-center space-x-[91px] md:py-[80px] flex  justify-between w-full ">
-            <div className="h-fit w-fit  relative flex pl-40  justify-end items-center">
-              <div className=" absolute left-[40px] -bottom-[15px] overflow-hidden  rounded-bl-[100px] w-fit ">
+          <div className=" pt-[80px]  items-center md:space-x-[91px] space-y-[50px] md:space-y-0 md:py-[80px] flex md:flex-row flex-col  justify-between w-full ">
+            <div className="h-fit w-fit  relative flex md:pl-40  justify-end items-center">
+              <div className=" absolute md:left-[40px]  -bottom-[15px] overflow-hidden  rounded-bl-[100px] w-fit ">
                 {greenPhoneShadow}
               </div>
               <Phone noShadow={true}></Phone>
             </div>
-            <div className="w-1/2  space-y-[40px]">
+            <div className="md:w-1/2  space-y-[40px]">
               {Array(3)
                 .fill('')
                 .map((el, index) => (
