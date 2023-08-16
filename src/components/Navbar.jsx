@@ -4,6 +4,7 @@ import blackLogo from '../assets/blackLogo.svg'
 import { useEffect, useState } from 'react'
 import MenuBurger from './MenuBurger'
 import { Fade } from 'react-reveal'
+import { handleScroll } from './FadeEffect'
 function Navbar({ setCurrentLink, currentLink }) {
   const navigate = useNavigate(null)
   const [Collapse, setCollapse] = useState(false)
@@ -27,7 +28,9 @@ function Navbar({ setCurrentLink, currentLink }) {
       link: 'download',
     },
   ]
-
+  useEffect(() => {
+    handleScroll()
+  }, [Collapse, navigate])
   useEffect(() => {
     // Retrieve the saved link from localStorage on component mount
     const savedLink = localStorage.getItem('currentLink')

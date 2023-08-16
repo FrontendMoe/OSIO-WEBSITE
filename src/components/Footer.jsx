@@ -50,10 +50,10 @@ function Footer({ currentLink, setCurrentLink }) {
           </div>
         </div>
       </div>
-      <div className=" flex flex-col items-end w-full  flex-1">
-        <div className="space-y-[20px]">
+      <div className=" flex  flex-col items-end w-full  flex-1">
+        <div className="w-full md:w-fit space-y-[20px]">
           <p>© 2004-2023 CBS INTERACTIVE. ALL RIGHTS RESERVED.</p>
-          <div className="  flex flex-wrap justify-around md:space-x-10 ">
+          <div className="  flex flex-wrap  w-full  justify-between md:space-x-10 ">
             {links.map((el, i) => (
               <Link
                 onClick={() => setCurrentLink(el.link)}
