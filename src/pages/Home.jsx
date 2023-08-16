@@ -222,8 +222,8 @@ function Home() {
         </div>
       </section>
       <section className="lg:px-[200px] px-[50px] relative  py-[150px] bg-[#FFF3D8]">
-        <div className="space-y-[150px] relative z-10">
-          <div className="flex lg:flex-row space-y-10 lg:space-y-0 flex-col justify-center ">
+        <div className="md:space-y-[150px] relative z-10">
+          <div className="flex lg:flex-row items-center space-y-10 lg:space-y-0 flex-col justify-center ">
             <div className="space-y-[40px] md:w-[500px]">
               <p className="sectionTitle">
                 Explore the Benefits of Joining Our Community.
@@ -235,12 +235,14 @@ function Home() {
             </div>
             <ImageBolls></ImageBolls>
           </div>
+          <div className="flex justify-center md:hidden">{verticalLineTwo}</div>
           <div>
-            <div className="justify-around flex">
+            <div className="justify-around hidden md:flex">
               <div>{verticalLineOne}</div>
               <div>{verticalLineOne}</div>
             </div>
-            <div className="flex md:flex-row flex-col w-full justify-center mx-auto">
+
+            <div className="flex md:flex-row md:items-start items-center flex-col w-full justify-center mx-auto">
               <ImageBolls
                 image={Parents}
                 title={
@@ -249,7 +251,12 @@ function Home() {
                   </>
                 }
               ></ImageBolls>
-              <div className="pt-[150px]">{horizontalLineTwo}</div>
+              <div className="pt-[150px] md:block hidden">
+                {horizontalLineTwo}
+              </div>
+              <div className="flex justify-center md:hidden">
+                {verticalLineTwo}
+              </div>
               <ImageBolls
                 image={Coaches}
                 title={
@@ -259,11 +266,14 @@ function Home() {
                 }
               ></ImageBolls>
             </div>
-            <div className="justify-around flex">
+            <div className="justify-around hidden md:flex ">
               <div>{verticalLineTwo}</div>
               <div>{verticalLineTwo}</div>
             </div>
-            <div className="flex md:flex-row flex-col items-end w-full justify-center mx-auto">
+            <div className="flex justify-center md:hidden">
+              {verticalLineTwo}
+            </div>
+            <div className="flex md:flex-row flex-col items-center md:items-end w-full justify-center mx-auto">
               <ImageBolls
                 image={collegiate}
                 title={
@@ -273,7 +283,12 @@ function Home() {
                   </>
                 }
               ></ImageBolls>
-              <div className="pb-[150px]">{horizontalLineTwo}</div>
+              <div className="pb-[150px] md:block hidden">
+                {horizontalLineTwo}
+              </div>
+              <div className="w-full flex justify-center md:hidden">
+                {verticalLineTwo}
+              </div>
               <ImageBolls
                 image={training}
                 title={
