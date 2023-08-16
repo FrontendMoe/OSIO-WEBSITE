@@ -8,7 +8,7 @@ import vectorOne from '../assets/HomeVector.svg'
 import vectorTwo from '../assets/HomeVector2.svg'
 import vectorThree from '../assets/vectorThree.svg'
 import vectorFour from '../assets/vectorFour.svg'
-import discoverSideVid3 from '../assets/discoverSideVid3.png'
+
 import discoverSideVid2 from '../assets/discoverSideVid2.mp4'
 import discoverSideVid from '../assets/discoverSideVid.png'
 import Phone from '../components/Phone'
@@ -120,12 +120,10 @@ function Home() {
           <div className="absolute rotate-[-36.814deg] scale-105  -left-[240px] overflow-visible top-[20px]">
             <Card img={discoverSideVid}></Card>
           </div>
+          <div className="absolute  scale-[95%]  rotate-[-30deg] -left-[200px] overflow-visible top-[290px]">
+            <Card vid={discoverSideVid2}></Card>
+          </div>
 
-          <img
-            src={discoverSideVid3}
-            alt=""
-            className="absolute  scale-105  -left-[240px] overflow-visible top-[270px]"
-          />
           <Phone
             video={videoThree}
             high={120}
