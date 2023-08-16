@@ -35,7 +35,9 @@ import {
   researchLines,
   verticalLineOne,
   verticalLineTwo,
+  vidCorner,
 } from '../assets/icons'
+import ExperienceScores from '../assets/ExperienceScores.png'
 import ExperienceSurvey from '../assets/ExperienceSurvey (2).png'
 //
 import collegiate from '../assets/Collegiate.png'
@@ -112,16 +114,54 @@ function Home() {
         </p>
         <div className="w-fit  relative ">
           <div className="absolute  -right-[240px] rotate-[30deg] top-[0]">
-            <Card img={discoverSideVid}></Card>
+            <Card
+              img={discoverSideVid}
+              title={
+                <>
+                  Discover <br />
+                  Local <br />
+                  Programs
+                </>
+              }
+            ></Card>
           </div>
           <div className="absolute   rotate-[15deg] scale-95 -right-[220px] top-[300px]">
-            <Card vid={discoverSideVid2}></Card>
+            <Card
+              vid={discoverSideVid2}
+              title={
+                <>
+                  Train <br />
+                  & Coach <br />
+                  Anywhere
+                </>
+              }
+              showCorner={true}
+            ></Card>
           </div>
           <div className="absolute rotate-[-36.814deg] scale-105  -left-[240px] overflow-visible top-[20px]">
-            <Card img={discoverSideVid}></Card>
+            <Card
+              title={
+                <>
+                  Good <br />
+                  Coaching <br />
+                  Matters.
+                </>
+              }
+              img={discoverSideVid}
+            ></Card>
           </div>
           <div className="absolute  scale-[95%]  rotate-[-30deg] -left-[200px] overflow-visible top-[290px]">
-            <Card vid={discoverSideVid2}></Card>
+            <Card
+              title={
+                <>
+                  Discover <br />
+                  Local <br />
+                  Programs
+                </>
+              }
+              vid={discoverSideVid2}
+              showCorner={true}
+            ></Card>
           </div>
 
           <Phone
@@ -179,7 +219,7 @@ function Home() {
                 <img
                   src={ExperienceSurvey}
                   alt=""
-                  className="     object-cover"
+                  className="   w-[233.827px] aspect-square  object-cover"
                 />
               </div>
             </div>
@@ -199,9 +239,9 @@ function Home() {
             <div className="bg-black p-2 w-fit rounded-full">
               <div className="rounded-full p-14 bg-[#EBE1C7]  overflow-hidden ">
                 <img
-                  src={ExperienceSurvey}
+                  src={ExperienceScores}
                   alt=""
-                  className="     object-cover"
+                  className="   w-[233.827px] aspect-square  object-cover"
                 />
               </div>
             </div>

@@ -1,6 +1,6 @@
 import discoverSideVid from '../assets/discoverSideVid.png'
 import video from '../assets/discoverSideVid.mp4'
-import { closeX } from '../assets/icons'
+import { closeX, vidCorner } from '../assets/icons'
 function Card({
   vid = video,
   title = (
@@ -10,6 +10,7 @@ function Card({
       Programs
     </>
   ),
+  showCorner = false,
   desc = ' olor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.o  olor sit',
 }) {
   return (
@@ -19,6 +20,12 @@ function Card({
           src={vid}
           className="object-cover absolute top-0  h-full w-full left-0"
         ></video>
+        {showCorner && (
+          <div className="absolute  bottom-0 -rotate-[20deg] -right-[70px] z-10">
+            {vidCorner}
+          </div>
+        )}
+
         <div className="relative h-fit -mt-[40px] z-10 flex justify-end">
           <div className="w-fit h-fit -rotate-[30deg]">{closeX}</div>
         </div>
@@ -26,7 +33,9 @@ function Card({
           <p className="text-[#E4E0D4] text-[34px] font-[900] leading-[30px]">
             {title}
           </p>
-          <p className="font-[500] text-[11px] text-[#E4E0D4]">{desc}</p>
+          <p className="font-[500] w-[75%] text-[11px] text-[#E4E0D4]">
+            {desc}
+          </p>
         </div>
       </div>
     </div>

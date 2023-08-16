@@ -206,6 +206,20 @@ const closeX = (
     />
   </svg>
 )
+const vidCorner = (
+  <svg
+    width="205"
+    height="82"
+    viewBox="0 0 205 82"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M161.955 0.530273L226.492 114.024L65.3783 205.639L0.841349 92.1455L161.955 0.530273Z"
+      fill="#8C386B"
+    />
+  </svg>
+)
 
 export {
   greenTriang,
@@ -222,4 +236,5 @@ export {
   horizontalLineOne,
   horizontalLineTwo,
   closeX,
+  vidCorner,
 }
