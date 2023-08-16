@@ -1,7 +1,7 @@
 function NotFound() {
   return (
     <div>
-      <section className="padding topSection text-center flex-col flex justify-center items-center">
+      <section className="padding topSection text-center min-h-screen flex-col flex justify-center items-center">
         <p>Error 404</p>
         <p>Page Not Found</p>
       </section>
