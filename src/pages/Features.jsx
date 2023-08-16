@@ -36,7 +36,7 @@ function Features() {
           </p>
           <div className=" pt-[80px]  items-center md:space-x-[91px] space-y-[50px] md:space-y-0 md:py-[80px] flex md:flex-row flex-col  justify-between w-full ">
             <div className="h-fit w-fit  relative flex md:pl-40  justify-end items-center">
-              <div className=" absolute md:left-[40px]  -bottom-[15px] overflow-hidden  rounded-bl-[100px] w-fit ">
+              <div className=" absolute md:left-[40px]  -bottom-[15px] overflow-hidden  rounded-b-[100px] w-fit ">
                 {greenPhoneShadow}
               </div>
               <Phone noShadow={true}></Phone>
@@ -69,14 +69,14 @@ function Features() {
             Create a profile in OSIO to engage the cheer <br /> community, offer
             coaching services to our network of{' '}
           </p>
-          <div className="  items-center space-x-[91px] md:py-[80px] flex  justify-between w-full ">
-            <div className="h-fit w-fit  relative flex pr-40  justify-end items-center">
-              <div className=" absolute right-0 -bottom-[15px] overflow-hidden  rounded-br-[100px] w-fit ">
+          <div className=" pt-[80px]  items-center md:space-x-[91px] space-y-[50px] md:space-y-0 md:py-[80px] flex md:flex-row flex-col  justify-between w-full ">
+            <div className="h-fit w-fit  relative flex md:pr-40  justify-end items-center">
+              <div className=" absolute md:right-0 -right-40 -bottom-[15px] overflow-hidden  rounded-br-[100px] w-fit ">
                 {orangePhoneShadow}
               </div>
               <Phone noShadow={true}></Phone>
             </div>
-            <div className="w-1/2  space-y-[40px]">
+            <div className="md:w-1/2  space-y-[40px]">
               {Array(3)
                 .fill('')
                 .map((el, index) => (
