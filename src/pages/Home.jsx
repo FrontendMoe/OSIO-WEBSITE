@@ -312,8 +312,8 @@ function Home() {
           />
         </div>
       </section>
-      <section className=" md:px-[200px] relative w-full md:-space-y-[350px]   py-[150px] bg-[#FFF3D8]">
-        <div className="w-full border boder-2 relative z-10 flex px-[50px] justify-end">
+      <section className=" md:px-[75px] lg:px-[100px] xl:px-[200px] relative w-full md:-space-y-[350px]   py-[150px] bg-[#FFF3D8]">
+        <div className="w-full  boder-2 relative z-10 flex px-[50px] justify-end">
           <div className="aspect-square w-fit flex justify-center items-center rounded-full p-4 overflow-hidden bg-[#000]">
             <video
               src={TeamMissionVid}
@@ -333,14 +333,14 @@ function Home() {
               alt=""
               className="rounded-full opacity-0 w-[500px] md:w-[695px] aspect-square"
             />
-            <div className="absolute link space-y-[30px]  top-0 left-1/2 -translate-x-1/2 w-1/2 mx-auto flex justify-center flex-col items-center h-full text-start ">
-              <p className="text-[#EED9B5] text-[36px] font-bold">
+            <div className="absolute link md:space-y-[30px]  top-0 left-1/2 -translate-x-1/2 w-[65%] lg:w-1/2 mx-auto flex justify-center flex-col items-center  h-full text-start ">
+              <p className="text-[#EED9B5] w-full text-start text-[24px] md:text-[36px] font-bold">
                 Team + Mission Built
               </p>
-              <p className="text-[#FFE6A4] text-[36px] font-[500]">
+              <p className="text-[#FFE6A4] text-[24px] md:text-[36px] font-[500]">
                 for and by the Cheer Community
               </p>
-              <p className="text-[16.188px] leading-[33.994px] text-[#FFF3D8]">
+              <p className="text-[14px] md:text-[16.188px] leading-[33.994px] text-[#FFF3D8]">
                 Create a profile in OSIO to engage the cheer community, offer
                 coaching services to our network of athletes and create a
                 profile to sh
