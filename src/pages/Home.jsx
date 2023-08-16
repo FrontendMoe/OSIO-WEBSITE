@@ -311,8 +311,8 @@ function Home() {
           />
         </div>
       </section>
-      <section className="px-[200px] relative -space-y-[350px]   py-[150px] bg-[#FFF3D8]">
-        <div className="w-full relative z-10 flex px-[50px] justify-end">
+      <section className=" md:px-[200px] relative w-full md:-space-y-[350px]   py-[150px] bg-[#FFF3D8]">
+        <div className="w-full border boder-2 relative z-10 flex px-[50px] justify-end">
           <div className="aspect-square w-fit flex justify-center items-center rounded-full p-4 overflow-hidden bg-[#000]">
             <video
               src={TeamMissionVid}
@@ -321,7 +321,7 @@ function Home() {
               loop={true}
               playsInline
               autoPlay
-              className="rounded-full md:w-[695px] aspect-square object-cover object-center"
+              className="rounded-full w-[500px] md:w-[695px] aspect-square object-cover object-center"
             ></video>
           </div>
         </div>
@@ -330,7 +330,7 @@ function Home() {
             <img
               src={TeamMission}
               alt=""
-              className="rounded-full opacity-0 md:w-[695px] aspect-square"
+              className="rounded-full opacity-0 w-[500px] md:w-[695px] aspect-square"
             />
             <div className="absolute link space-y-[30px]  top-0 left-1/2 -translate-x-1/2 w-1/2 mx-auto flex justify-center flex-col items-center h-full text-start ">
               <p className="text-[#EED9B5] text-[36px] font-bold">
@@ -356,7 +356,9 @@ function Home() {
         </div>
       </section>
       {/* Last Section */}
-      <Join></Join>
+      <div className="relative z-20">
+        <Join></Join>
+      </div>
     </div>
   )
 }
