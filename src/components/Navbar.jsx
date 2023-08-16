@@ -4,10 +4,9 @@ import blackLogo from '../assets/blackLogo.svg'
 import { useEffect, useState } from 'react'
 import MenuBurger from './MenuBurger'
 import { Fade } from 'react-reveal'
-function Navbar() {
+function Navbar({ setCurrentLink, currentLink }) {
   const navigate = useNavigate(null)
   const [Collapse, setCollapse] = useState(false)
-  const [currentLink, setCurrentLink] = useState(null)
   const links = [
     {
       name: 'Home',
@@ -44,14 +43,17 @@ function Navbar() {
   useEffect(() => {
     if (currentLink) navigate(currentLink)
   }, [currentLink])
+
   return (
     <nav className="absolute z-50 flex w-full justify-between md:flex-row flex-col md:bg-transparent bg-[#050505] padding py-[40px] md:pt-[100px]">
       <div className="flex items-center w-full md:w-fit justify-between">
-        {currentLink === 'home' ? (
-          <img key={'lightLogo'} src={logo} alt="" className="w-fit" />
-        ) : (
-          <img key={'blackLogo'} src={blackLogo} alt="" className="w-fit" />
-        )}
+        <div className="cursor-pointer" onClick={() => setCurrentLink('home')}>
+          {currentLink === 'home' ? (
+            <img key={'lightLogo'} src={logo} alt="" className="w-fit" />
+          ) : (
+            <img key={'blackLogo'} src={blackLogo} alt="" className="w-fit" />
+          )}
+        </div>
         {/* Burger */}
         <div
           onClick={() => {

@@ -17,6 +17,7 @@ import benifits from '../assets/Benifits.png'
 import { BsArrowRight } from 'react-icons/bs'
 import ImageBolls from '../components/ImageBolls'
 import Coaches from '../assets/Coaches.png'
+import training from '../assets/training.png'
 import Parents from '../assets/parents.png'
 import TeamMission from '../assets/TeamMisson.png'
 // Videos
@@ -35,6 +36,8 @@ import {
   verticalLineTwo,
 } from '../assets/icons'
 import ExperienceSurvey from '../assets/ExperienceSurvey (2).png'
+//
+import collegiate from '../assets/Collegiate.png'
 function Home() {
   const playAllVideos = () => {
     const videos = document.querySelectorAll('video')
@@ -220,12 +223,12 @@ function Home() {
       </section>
       <section className="lg:px-[200px] px-[50px] relative  py-[150px] bg-[#FFF3D8]">
         <div className="space-y-[150px] relative z-10">
-          <div className="flex lg:flex-row space-y-10 lg:space-y-0 flex-col justify-between ">
+          <div className="flex lg:flex-row space-y-10 lg:space-y-0 flex-col justify-center ">
             <div className="space-y-[40px] md:w-[500px]">
               <p className="sectionTitle">
                 Explore the Benefits of Joining Our Community.
               </p>
-              <p className="mdText">
+              <p className="mdText md:w-[330px]">
                 Create a profile in OSIO to engage the cheer community, offer
                 coaching services to our network of{' '}
               </p>
@@ -238,18 +241,48 @@ function Home() {
               <div>{verticalLineOne}</div>
             </div>
             <div className="flex md:flex-row flex-col w-full justify-center mx-auto">
-              <ImageBolls image={Parents}></ImageBolls>
+              <ImageBolls
+                image={Parents}
+                title={
+                  <>
+                    Parents <br />& Guardians
+                  </>
+                }
+              ></ImageBolls>
               <div className="pt-[150px]">{horizontalLineTwo}</div>
-              <ImageBolls image={Coaches}></ImageBolls>
+              <ImageBolls
+                image={Coaches}
+                title={
+                  <>
+                    Coaches <br />& Trainers
+                  </>
+                }
+              ></ImageBolls>
             </div>
             <div className="justify-around flex">
               <div>{verticalLineTwo}</div>
               <div>{verticalLineTwo}</div>
             </div>
             <div className="flex md:flex-row flex-col items-end w-full justify-center mx-auto">
-              <ImageBolls image={Parents}></ImageBolls>
+              <ImageBolls
+                image={collegiate}
+                title={
+                  <>
+                    Collegiate <br />& AllStar <br />
+                    Programs
+                  </>
+                }
+              ></ImageBolls>
               <div className="pb-[150px]">{horizontalLineTwo}</div>
-              <ImageBolls image={Coaches}></ImageBolls>
+              <ImageBolls
+                image={training}
+                title={
+                  <>
+                    Training <br />
+                    Facilities
+                  </>
+                }
+              ></ImageBolls>
             </div>
           </div>
         </div>

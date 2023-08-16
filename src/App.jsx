@@ -12,17 +12,25 @@ import Features from './pages/Features'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
 function App() {
+  const [currentLink, setCurrentLink] = useState(null)
+
   return (
     <BrowserRouter>
       <ScrollToTop></ScrollToTop>
-      <Navbar></Navbar>
+      <Navbar
+        currentLink={currentLink}
+        setCurrentLink={setCurrentLink}
+      ></Navbar>
       <Routes>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/Features" element={<Features></Features>}></Route>
         <Route path="/About" element={<About></About>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
-      <Footer></Footer>
+      <Footer
+        currentLink={currentLink}
+        setCurrentLink={setCurrentLink}
+      ></Footer>
     </BrowserRouter>
   )
 }
