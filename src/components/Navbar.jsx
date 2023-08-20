@@ -104,7 +104,7 @@ function Navbar({ setCurrentLink, currentLink }) {
       <div className="md:hidden">
         {Collapse && (
           <Fade>
-            <div className="md:space-x-[77px]  space-y-[30px] w-full items-center  justify-end  md:space-y-0 flex md:flex-row flex-col">
+            <div className="md:space-x-[77px] pt-[40px] space-y-[30px] w-full items-center  justify-end  md:space-y-0 flex md:flex-row flex-col">
               {links.map((link, index) => (
                 <p
                   key={index}
