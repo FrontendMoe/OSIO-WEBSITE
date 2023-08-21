@@ -75,7 +75,9 @@ function Home() {
         <div className="  pb-[200px] overflow-hidden relative z-10 items-center pt-[200px] md:pt-[300px]">
           <div className="space-y-[61px] items-center relative flex flex-col z-10">
             {/* Mobile Phone */}
-            <Phone></Phone>
+            <div className="w-fit h-fit md:scale-100 scale-[80%]">
+              <Phone></Phone>
+            </div>
             <img src={logo} alt="" />
             <p className="mdText md:w-[719px] text-center">
               Create a profile in OSIO to engage the cheer community, offer
@@ -112,7 +114,7 @@ function Home() {
           Create a profile in OSIO to engage the cheer community, offer coaching
           services to our network of{' '}
         </p>
-        <div className="w-fit  relative ">
+        <div className="w-fit  relative  md:scale-100 scale-[80%]">
           <div className="absolute  -right-[240px] rotate-[30deg] top-[0]">
             <Card
               img={discoverSideVid}
@@ -182,7 +184,7 @@ function Home() {
           Create a profile in OSIO to engage the cheer <br /> community, offer
           coaching services to our network of{' '}
         </p>
-        <div className="w-fit  relative ">
+        <div className="w-fit  relative  md:scale-100 scale-[80%]">
           <img
             src={researchSideVid2}
             alt=""

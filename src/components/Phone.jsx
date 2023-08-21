@@ -16,7 +16,7 @@ const Phone = ({
   left = 0,
 }) => {
   return (
-    <div className="relative   overflow-visible mx-auto w-[375.436px] h-fit z-10">
+    <div className="relative   overflow-visible md:scale-100  mx-auto w-[375.436px] h-fit z-10">
       {!noShadow &&
         (bottomShadow ? (
           <img

@@ -35,7 +35,7 @@ function Features() {
             coaching services to our network of
           </p>
           <div className=" pt-[80px]  items-center md:space-x-[91px] space-y-[50px] md:space-y-0 md:py-[80px] flex md:flex-row flex-col  justify-between w-full ">
-            <div className="h-fit w-fit  relative flex md:pl-40  justify-end items-center">
+            <div className="h-fit w-fit md:scale-100 scale-[80%]  relative flex md:pl-40  justify-end items-center">
               <div className=" absolute md:left-[40px]  -bottom-[15px] overflow-hidden  rounded-b-[100px] w-fit ">
                 {greenPhoneShadow}
               </div>
@@ -70,7 +70,7 @@ function Features() {
             coaching services to our network of{' '}
           </p>
           <div className=" pt-[80px]  items-center md:space-x-[91px] space-y-[50px] md:space-y-0 md:py-[80px] flex md:flex-row flex-col  justify-between w-full ">
-            <div className="h-fit w-fit  relative flex md:pr-40  justify-end items-center">
+            <div className="h-fit w-fit  md:scale-100 scale-[80%] relative flex md:pr-40  justify-end items-center">
               <div className=" absolute md:right-0 -right-40 -bottom-[15px] overflow-hidden  rounded-br-[100px] w-fit ">
                 {orangePhoneShadow}
               </div>
@@ -105,7 +105,7 @@ function Features() {
             coaching services to our network of{' '}
           </p>
           <div className=" pt-[80px]  items-center md:space-x-[91px] space-y-[50px] md:space-y-0 md:py-[80px] flex md:flex-row flex-col  justify-between w-full ">
-            <div className="h-fit w-fit  relative flex md:pl-40  justify-center items-center">
+            <div className="h-fit w-fit  md:scale-100 scale-[80%]   relative flex md:pl-40  justify-center items-center">
               <div className="bg-[#9C7431] fade absolute right-40 md:left-0 -bottom-[15px] rounded-b-[100px] w-full h-[80%]"></div>
               <Phone noShadow={true}></Phone>
             </div>
@@ -144,7 +144,7 @@ function Features() {
             {cheerProgramTriang}
           </div>
         </div>
-        <div className="h-fit scale-100 w-fit md:mr-[100px] -bottom-[200px] relative flex pl-40  justify-center items-center">
+        <div className="h-fit   md:scale-100 scale-[80%]  w-fit md:mr-[100px] -bottom-[200px] relative flex pl-40  justify-center items-center">
           <div className="bg-[#762C56] fade w-[500px] absolute right-2 top-10 overflow-hidden h-[700px]   rounded-[100px]  "></div>{' '}
           <Phone noShadow={true}></Phone>
         </div>
@@ -162,7 +162,7 @@ function Features() {
               coaching services to our network of{' '}
             </p>
           </div>
-          <div className="  h-[600px] scale-90 overflow-hidden w-[519.049px] right-24 -top-[210px] rounded-bl-[100px]   relative flex pl-40  justify-center items-center">
+          <div className="  h-[600px]  md:scale-90 scale-[80%] overflow-hidden w-[519.049px] right-24 -top-[220px] md:-top-[210px] rounded-bl-[100px]   relative flex pl-40  justify-center items-center">
             <div className="bg-[#9A9FCE] fade w-[800px] absolute right-2 bottom-0 overflow-hidden h-[400px]   rounded-[100px]  "></div>{' '}
             <div className="absolute  -bottom-[150px] -right-0">
               <Phone noShadow={true}></Phone>
