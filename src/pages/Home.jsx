@@ -61,7 +61,7 @@ function Home() {
   }, [])
   return (
     <div className="overflow-hidden">
-      <section className="relative h-fit   overflow-hidden">
+      <section className="relative h-fit  overflow-hidden">
         <div>
           <video
             src={bgVideo}
@@ -72,7 +72,7 @@ function Home() {
             className="w-full h-[80%] object-cover absolute top-0 left-0"
           ></video>
         </div>
-        <div className="  pb-[200px] overflow-hidden relative z-10 items-center pt-[200px] md:pt-[300px]">
+        <div className=" pb-[50px]  px-[20px]  md:pb-[200px] overflow-hidden relative z-10 items-center pt-[150px] md:pt-[300px]">
           <div className="space-y-[61px] items-center relative flex flex-col z-10">
             {/* Mobile Phone */}
             <div className="w-fit h-fit md:scale-100 scale-[80%]">
@@ -106,7 +106,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="flex text-center overflow-hidden space-y-[50px] bg-[#EBE1C7] flex-col items-center py-[50px] md:py-[150px]">
+      <section className="flex text-center px-[20px]  overflow-hidden space-y-[50px] bg-[#EBE1C7] flex-col items-center py-[50px] md:py-[150px]">
         <p className="sectionTitle">
           Resources <br />& Community For <br /> CheerAthletes.
         </p>
