@@ -17,7 +17,6 @@ function Navbar({ setCurrentLink, currentLink }) {
       name: 'Features',
       link: 'Features',
     },
-
     {
       name: 'About Us',
       link: 'about',
