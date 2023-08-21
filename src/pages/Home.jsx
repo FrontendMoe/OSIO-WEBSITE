@@ -106,7 +106,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="flex text-center overflow-hidden space-y-[50px] bg-[#EBE1C7] flex-col items-center py-[150px]">
+      <section className="flex text-center overflow-hidden space-y-[50px] bg-[#EBE1C7] flex-col items-center py-[50px] md:py-[150px]">
         <p className="sectionTitle">
           Resources <br />& Community For <br /> CheerAthletes.
         </p>
@@ -176,7 +176,7 @@ function Home() {
           ></Phone>
         </div>
       </section>
-      <section className="flex overflow-hidden sectionPadding  text-center space-y-[50px] bg-[#DED1AE] flex-col items-center py-[150px]">
+      <section className="flex overflow-hidden sectionPadding  text-center space-y-[50px] bg-[#DED1AE] flex-col items-center py-[50px] md:py-[150px]">
         <p className="sectionTitle">
           Share your Experiences <br /> with Coaches & Programs
         </p>
@@ -259,7 +259,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="lg:px-[200px] px-[50px] relative  py-[150px] bg-[#FFF3D8]">
+      <section className="lg:px-[200px] px-[50px] relative py-[50px] md:py-[150px] bg-[#FFF3D8]">
         <div className="md:space-y-[150px] relative z-10">
           <div className="flex lg:flex-row items-center space-y-10 lg:space-y-0 flex-col justify-center ">
             <div className="space-y-[40px] md:w-[500px]">
@@ -349,7 +349,7 @@ function Home() {
           />
         </div>
       </section>
-      <section className=" md:px-[75px] lg:px-[100px] xl:px-[200px] relative w-full md:-space-y-[350px]   py-[150px] bg-[#FFF3D8]">
+      <section className=" md:px-[75px] lg:px-[100px] xl:px-[200px] relative w-full md:-space-y-[350px] py-[50px]  md:py-[150px] bg-[#FFF3D8]">
         <div className="w-full  boder-2 relative z-10 flex px-[20px] md:px-[50px] justify-end">
           <div className="aspect-square w-fit flex justify-center items-center rounded-full p-4 overflow-hidden bg-[#000]">
             <video
