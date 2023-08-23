@@ -45,12 +45,13 @@ function Features() {
               {Array(3)
                 .fill('')
                 .map((el, index) => (
-                  <div key={index} className="space-y-[30px] w-[324.334px]">
+                  <div key={index} className="space-y-[30px] md:w-[324.334px]">
                     {greenTriang}
                     <div>
-                      <p className=" font-bold text-[27.555px]">
+                      <p style={{ fontWeight: 'bold' }} className=" mdText">
                         Experience Surveys
                       </p>
+
                       <p className="smText">
                         Create a profile in OSIO to engage the cheer community,
                         offer coaching services to our network of{' '}
@@ -80,10 +81,10 @@ function Features() {
               {Array(3)
                 .fill('')
                 .map((el, index) => (
-                  <div key={index} className="space-y-[30px] w-[324.334px]">
+                  <div key={index} className="space-y-[30px] md:w-[324.334px]">
                     {orangeTriang}
                     <div>
-                      <p className=" font-bold text-[27.555px]">
+                      <p style={{ fontWeight: 'bold' }} className=" mdText">
                         Experience Surveys
                       </p>
                       <p className="smText">
@@ -113,10 +114,10 @@ function Features() {
               {Array(3)
                 .fill('')
                 .map((el, index) => (
-                  <div key={index} className="space-y-[30px] w-[324.334px]">
+                  <div key={index} className="space-y-[30px] md:w-[324.334px]">
                     {brownTriang}
                     <div>
-                      <p className=" font-bold text-[27.555px]">
+                      <p style={{ fontWeight: 'bold' }} className=" mdText">
                         Experience Surveys
                       </p>
                       <p className="smText">
@@ -174,10 +175,10 @@ function Features() {
             {Array(3)
               .fill('')
               .map((el, index) => (
-                <div key={index} className="space-y-[30px] w-[324.334px]">
+                <div key={index} className="space-y-[30px] md:w-[324.334px]">
                   {purpleTriang}
                   <div>
-                    <p className=" font-bold text-[27.555px]">
+                    <p style={{ fontWeight: 'bold' }} className="  mdText">
                       Experience Surveys
                     </p>
                     <p className="smText">
@@ -192,10 +193,10 @@ function Features() {
             {Array(3)
               .fill('')
               .map((el, index) => (
-                <div key={index} className="space-y-[30px] w-[324.334px]">
+                <div key={index} className="space-y-[30px] md:w-[324.334px]">
                   {blueTriang}
                   <div>
-                    <p className=" font-bold text-[27.555px]">
+                    <p style={{ fontWeight: 'bold' }} className=" mdText">
                       Experience Surveys
                     </p>
                     <p className="smText">
