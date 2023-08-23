@@ -110,60 +110,62 @@ function Home() {
         <p className="sectionTitle">
           Resources <br />& Community For <br /> CheerAthletes.
         </p>
-        <p className="mdText md:w-[750px]">
+        <p className="mdText md:w-[750px] ">
           Create a profile in OSIO to engage the cheer community, offer coaching
           services to our network of{' '}
         </p>
-        <div className="w-fit  relative  md:scale-100 scale-[80%]">
-          <div className="absolute  -right-[240px] rotate-[30deg] top-[0]">
-            <Card
-              img={discoverSideVid}
-              title={
-                <>
-                  Discover <br />
-                  Local <br />
-                  Programs
-                </>
-              }
-            ></Card>
-          </div>
-          <div className="absolute   rotate-[15deg] scale-95 -right-[220px] top-[300px]">
-            <Card
-              vid={discoverSideVid2}
-              title={
-                <>
-                  Train <br />
-                  & Coach <br />
-                  Anywhere
-                </>
-              }
-              showCorner={true}
-            ></Card>
-          </div>
-          <div className="absolute rotate-[-36.814deg] scale-105  -left-[240px] overflow-visible top-[20px]">
-            <Card
-              title={
-                <>
-                  Good <br />
-                  Coaching <br />
-                  Matters.
-                </>
-              }
-              img={discoverSideVid}
-            ></Card>
-          </div>
-          <div className="absolute  scale-[95%]  rotate-[-30deg] -left-[200px] overflow-visible top-[290px]">
-            <Card
-              title={
-                <>
-                  Discover <br />
-                  Local <br />
-                  Programs
-                </>
-              }
-              vid={discoverSideVid2}
-              showCorner={true}
-            ></Card>
+        <div className="w-fit  relative -top-[50px] md:top-0 md:scale-100 scale-[80%]">
+          <div className="md:block hidden">
+            <div className="absolute  -right-[240px] rotate-[30deg] top-[0]">
+              <Card
+                img={discoverSideVid}
+                title={
+                  <>
+                    Discover <br />
+                    Local <br />
+                    Programs
+                  </>
+                }
+              ></Card>
+            </div>
+            <div className="absolute   rotate-[15deg] scale-95 -right-[220px] top-[300px]">
+              <Card
+                vid={discoverSideVid2}
+                title={
+                  <>
+                    Train <br />
+                    & Coach <br />
+                    Anywhere
+                  </>
+                }
+                showCorner={true}
+              ></Card>
+            </div>
+            <div className="absolute rotate-[-36.814deg] scale-105  -left-[240px] overflow-visible top-[20px]">
+              <Card
+                title={
+                  <>
+                    Good <br />
+                    Coaching <br />
+                    Matters.
+                  </>
+                }
+                img={discoverSideVid}
+              ></Card>
+            </div>
+            <div className="absolute  scale-[95%]  rotate-[-30deg] -left-[200px] overflow-visible top-[290px]">
+              <Card
+                title={
+                  <>
+                    Discover <br />
+                    Local <br />
+                    Programs
+                  </>
+                }
+                vid={discoverSideVid2}
+                showCorner={true}
+              ></Card>
+            </div>
           </div>
 
           <Phone
@@ -180,31 +182,33 @@ function Home() {
         <p className="sectionTitle">
           Share your Experiences <br /> with Coaches & Programs
         </p>
-        <p className="mdText pb-[150px]">
+        <p className="mdText md:pb-[150px]">
           Create a profile in OSIO to engage the cheer <br /> community, offer
           coaching services to our network of{' '}
         </p>
-        <div className="w-fit  relative  md:scale-100 scale-[80%]">
-          <img
-            src={researchSideVid2}
-            alt=""
-            className="absolute scale-105 z-10 rotate-[0deg] -right-[240px] -top-[50px]"
-          />
-          <img
-            src={researchSideVid1}
-            alt=""
-            className="absolute  scale-125 rotate-[0deg] -right-[240px] top-[200px]"
-          />
-          <img
-            src={researchSideVid4}
-            alt=""
-            className="absolute  scale-105 z-10 rotate-[0deg] -left-[240px] overflow-visible -top-[50px]"
-          />
-          <img
-            src={researchSideVid3}
-            alt=""
-            className="absolute  scale-125 rotate-[0deg]  -left-[240px] overflow-visible top-[200px]"
-          />
+        <div className="w-fit md:mt-0 relative -top-[50px] md:top-0 md:scale-100 scale-[80%]">
+          <div className="md:block hidden">
+            <img
+              src={researchSideVid2}
+              alt=""
+              className="absolute scale-105 z-10 rotate-[0deg] -right-[240px] -top-[50px]"
+            />
+            <img
+              src={researchSideVid1}
+              alt=""
+              className="absolute  scale-125 rotate-[0deg] -right-[240px] top-[200px]"
+            />
+            <img
+              src={researchSideVid4}
+              alt=""
+              className="absolute  scale-105 z-10 rotate-[0deg] -left-[240px] overflow-visible -top-[50px]"
+            />
+            <img
+              src={researchSideVid3}
+              alt=""
+              className="absolute  scale-125 rotate-[0deg]  -left-[240px] overflow-visible top-[200px]"
+            />
+          </div>
           <Phone
             video={videoTwo}
             high={150}
@@ -215,7 +219,10 @@ function Home() {
           ></Phone>
         </div>
         <div className="flex md:items-start h-fit md:flex-row space-y-[30px] md:space-y-0  flex-col items-center  justify-center   w-full">
-          <div className="md:w-[367px]   space-y-[80px]">
+          <div className="md:w-[367px]  space-y-[40px] md:space-y-[80px]">
+            <p className="sectionTitle md:hidden  text-[52px]">
+              Experience <br /> Surveys
+            </p>
             <div className="bg-black mx-auto p-2 w-fit rounded-full">
               <div className="rounded-full p-14 bg-[#EBE1C7]  overflow-hidden ">
                 <img
@@ -226,7 +233,7 @@ function Home() {
               </div>
             </div>
             <div className="text-center">
-              <p className="sectionTitle text-[52px]">
+              <p className="sectionTitle md:block hidden text-[52px]">
                 Experience <br /> Surveys
               </p>
               <p className="mdText">
@@ -237,7 +244,10 @@ function Home() {
           </div>
           <div className="flex justify-center md:hidden">{verticalLineTwo}</div>
           <div className=" h-full pt-10 md:block hidden">{researchLines}</div>
-          <div className="md:w-[367px] flex flex-col items-center md:items-end space-y-[80px]">
+          <div className="md:w-[367px] flex flex-col items-center md:items-end space-y-[40px] md:space-y-[80px]">
+            <p className="sectionTitle md:hidden  text-[52px]">
+              Experience <br /> Scores
+            </p>
             <div className="bg-black p-2 w-fit rounded-full">
               <div className="rounded-full p-14 bg-[#EBE1C7]  overflow-hidden ">
                 <img
@@ -248,7 +258,7 @@ function Home() {
               </div>
             </div>
             <div className="text-center">
-              <p className="sectionTitle text-[52px]">
+              <p className="sectionTitle md:block hidden text-[52px]">
                 Experience <br /> Scores
               </p>
               <p className="mdText">

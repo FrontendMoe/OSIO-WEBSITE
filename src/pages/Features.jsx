@@ -26,7 +26,7 @@ function Features() {
       </section>
       {/* Chear athletes */}
       <section className="bg-[#E2D9C0]  sectionPadding min-h-screen">
-        <div className="py-[100px] border-b border-[#00000040]">
+        <div className="py-[50px] md:py-[100px] border-b border-[#00000040]">
           <p className="sectionTitle  pb-4">
             Cheer <br /> Athletes
           </p>
@@ -34,7 +34,7 @@ function Features() {
             Create a profile in OSIO to engage the cheer <br /> community, offer
             coaching services to our network of
           </p>
-          <div className=" pt-[80px]  items-center md:space-x-[91px] space-y-[50px] md:space-y-0 md:py-[80px] flex md:flex-row flex-col  justify-between w-full ">
+          <div className=" md:pt-[80px]  items-center md:space-x-[91px] space-y-[50px] md:space-y-0 md:py-[80px] flex md:flex-row flex-col  justify-between w-full ">
             <div className="h-fit w-fit md:scale-100 scale-[80%]  relative flex md:pl-40  justify-end items-center">
               <div className=" absolute md:left-[40px]  -bottom-[15px] overflow-hidden  rounded-b-[100px] w-fit ">
                 {greenPhoneShadow}
@@ -61,7 +61,7 @@ function Features() {
             </div>
           </div>
         </div>
-        <div className="py-[100px] border-b border-[#00000040]">
+        <div className="py-[50px] md:py-[100px] border-b border-[#00000040]">
           <p className="sectionTitle  pb-4">
             Guardians <br /> &Child Athletes
           </p>
@@ -69,7 +69,7 @@ function Features() {
             Create a profile in OSIO to engage the cheer <br /> community, offer
             coaching services to our network of{' '}
           </p>
-          <div className=" pt-[80px]  items-center md:space-x-[91px] space-y-[50px] md:space-y-0 md:py-[80px] flex md:flex-row flex-col  justify-between w-full ">
+          <div className=" md:pt-[80px]  items-center md:space-x-[91px] space-y-[50px] md:space-y-0 md:py-[80px] flex md:flex-row flex-col  justify-between w-full ">
             <div className="h-fit w-fit  md:scale-100 scale-[80%] relative flex md:pr-40  justify-end items-center">
               <div className=" absolute md:right-0 -right-40 -bottom-[15px] overflow-hidden  rounded-br-[100px] w-fit ">
                 {orangePhoneShadow}
@@ -96,7 +96,7 @@ function Features() {
             </div>
           </div>
         </div>
-        <div className="py-[100px]  border-[#00000040]">
+        <div className="py-[50px] md:py-[100px]  border-[#00000040]">
           <p className="sectionTitle  pb-4">
             Cheer Coaches & <br /> Trainers
           </p>
@@ -104,7 +104,7 @@ function Features() {
             Create a profile in OSIO to engage the cheer <br /> community, offer
             coaching services to our network of{' '}
           </p>
-          <div className=" pt-[80px]  items-center md:space-x-[91px] space-y-[50px] md:space-y-0 md:py-[80px] flex md:flex-row flex-col  justify-between w-full ">
+          <div className=" md:pt-[80px]  items-center md:space-x-[91px] space-y-[50px] md:space-y-0 md:py-[80px] flex md:flex-row flex-col  justify-between w-full ">
             <div className="h-fit w-fit  md:scale-100 scale-[80%]   relative flex md:pl-40  justify-center items-center">
               <div className="bg-[#9C7431] fade absolute right-40 md:left-0 -bottom-[15px] rounded-b-[100px] w-full h-[80%]"></div>
               <Phone noShadow={true}></Phone>
@@ -131,8 +131,8 @@ function Features() {
         </div>
       </section>
       {/* Cheer Program */}
-      <section className="bg-[#F1DFB5] md:pt-0 pt-[100px] md:flex-row flex-col flex justify-between   min-h-screen relative">
-        <div className="flex sectionPadding flex-col justify-center">
+      <section className="bg-[#F1DFB5]  py-[50px] md:py-[100px] md:flex-row flex-col flex justify-between  h-fit md:min-h-screen relative">
+        <div className="flex sectionPadding  flex-col justify-center">
           <p className="sectionTitle">
             Cheer <br /> Program <br /> Staff
           </p>
@@ -144,8 +144,8 @@ function Features() {
             {cheerProgramTriang}
           </div>
         </div>
-        <div className="h-fit   md:scale-100 scale-[80%]  w-fit md:mr-[100px] -bottom-[200px] relative flex pl-40  justify-center items-center">
-          <div className="bg-[#762C56] fade w-[500px] absolute right-2 top-10 overflow-hidden h-[700px]   rounded-[100px]  "></div>{' '}
+        <div className="h-fit  -mt-[200px] md:mt-0 md:scale-100 scale-[80%]  w-fit md:mr-[100px] -bottom-[200px] relative flex pl-40  justify-center items-center">
+          <div className="bg-[#762C56] fade w-[500px] absolute right-2  top-10 overflow-hidden h-[700px]   rounded-[100px]  "></div>{' '}
           <Phone noShadow={true}></Phone>
         </div>
       </section>
@@ -153,7 +153,7 @@ function Features() {
       {/* Facility Manager */}
       <section className="bg-[#FFF3D8] sectionPadding min-h-screen">
         <div className="min-h-[70vh] flex md:flex-row flex-col-reverse  justify-around md:justify-between border-b-[3px] border-[#DBD3BA] ">
-          <div className="flex-1 py-[50px] md:mt-0  mt-[-150px]  flex-col justify-center">
+          <div className="flex-1 py-[50px] md:mt-0  mt-[-200px]  flex-col justify-center">
             <p className="sectionTitle ">
               Facility <br /> Managers
             </p>
