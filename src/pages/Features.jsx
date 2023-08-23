@@ -10,6 +10,7 @@ import {
   purpleTriang,
 } from '../assets/icons'
 import Join from '../components/Join'
+import LinkCard from '../components/LinkCard'
 import Phone from '../components/Phone'
 
 function Features() {
@@ -45,19 +46,7 @@ function Features() {
               {Array(3)
                 .fill('')
                 .map((el, index) => (
-                  <div key={index} className="space-y-[30px] md:w-[324.334px]">
-                    {greenTriang}
-                    <div>
-                      <p style={{ fontWeight: 'bold' }} className=" mdText">
-                        Experience Surveys
-                      </p>
-
-                      <p className="smText">
-                        Create a profile in OSIO to engage the cheer community,
-                        offer coaching services to our network of{' '}
-                      </p>
-                    </div>
-                  </div>
+                  <LinkCard triang={greenTriang} key={index}></LinkCard>
                 ))}
             </div>
           </div>
@@ -81,18 +70,7 @@ function Features() {
               {Array(3)
                 .fill('')
                 .map((el, index) => (
-                  <div key={index} className="space-y-[30px] md:w-[324.334px]">
-                    {orangeTriang}
-                    <div>
-                      <p style={{ fontWeight: 'bold' }} className=" mdText">
-                        Experience Surveys
-                      </p>
-                      <p className="smText">
-                        Create a profile in OSIO to engage the cheer community,
-                        offer coaching services to our network of{' '}
-                      </p>
-                    </div>
-                  </div>
+                  <LinkCard triang={orangeTriang} key={index}></LinkCard>
                 ))}
             </div>
           </div>
@@ -114,25 +92,14 @@ function Features() {
               {Array(3)
                 .fill('')
                 .map((el, index) => (
-                  <div key={index} className="space-y-[30px] md:w-[324.334px]">
-                    {brownTriang}
-                    <div>
-                      <p style={{ fontWeight: 'bold' }} className=" mdText">
-                        Experience Surveys
-                      </p>
-                      <p className="smText">
-                        Create a profile in OSIO to engage the cheer community,
-                        offer coaching services to our network of{' '}
-                      </p>
-                    </div>
-                  </div>
+                  <LinkCard key={index} triang={brownTriang}></LinkCard>
                 ))}
             </div>
           </div>
         </div>
       </section>
       {/* Cheer Program */}
-      <section className="bg-[#F1DFB5]  py-[50px] md:py-[100px] md:flex-row flex-col flex justify-between  h-fit md:min-h-screen relative">
+      <section className="bg-[#F1DFB5] h-[80vh]  py-[50px] md:py-[100px] md:flex-row flex-col flex md:justify-between   md:min-h-screen relative">
         <div className="flex sectionPadding  flex-col justify-center">
           <p className="sectionTitle">
             Cheer <br /> Program <br /> Staff
@@ -145,7 +112,7 @@ function Features() {
             {cheerProgramTriang}
           </div>
         </div>
-        <div className="h-fit  -mt-[200px] md:mt-0 md:scale-100 scale-[80%]  w-fit md:mr-[100px] -bottom-[200px] relative flex pl-40  justify-center items-center">
+        <div className="h-fit  -mt-[200px] md:mt-0 md:scale-100 scale-[60%]  w-fit md:mr-[100px] -bottom-[100px] md:-bottom-[200px] relative flex md:pl-40 pl-20  justify-center items-center">
           <div className="bg-[#762C56] fade w-[500px] absolute right-2  top-10 overflow-hidden h-[700px]   rounded-[100px]  "></div>{' '}
           <Phone noShadow={true}></Phone>
         </div>
@@ -153,8 +120,8 @@ function Features() {
 
       {/* Facility Manager */}
       <section className="bg-[#FFF3D8] sectionPadding min-h-screen">
-        <div className="min-h-[70vh] flex md:flex-row flex-col-reverse  justify-around md:justify-between border-b-[3px] border-[#DBD3BA] ">
-          <div className="flex-1 py-[50px] md:mt-0  mt-[-200px]  flex-col justify-center">
+        <div className=" md:min-h-[70vh] flex md:flex-row flex-col-reverse  justify-around md:justify-between border-b-[3px] border-[#DBD3BA] ">
+          <div className="flex-1 py-[50px] md:mt-0 mt-[-300px]  flex-col justify-center">
             <p className="sectionTitle ">
               Facility <br /> Managers
             </p>
@@ -163,7 +130,7 @@ function Features() {
               coaching services to our network of{' '}
             </p>
           </div>
-          <div className="  h-[600px]  md:scale-90 scale-[80%] overflow-hidden w-[519.049px] right-24 -top-[220px] md:-top-[210px] rounded-bl-[100px]   relative flex pl-40  justify-center items-center">
+          <div className="  h-[600px]  md:scale-90 scale-[50%] overflow-hidden w-[519.049px] right-36 -top-[250px] md:-top-[210px] rounded-bl-[100px]   relative flex pl-40  justify-center items-center">
             <div className="bg-[#9A9FCE] fade w-[800px] absolute right-2 bottom-0 overflow-hidden h-[400px]   rounded-[100px]  "></div>{' '}
             <div className="absolute  -bottom-[150px] -right-0">
               <Phone noShadow={true}></Phone>
@@ -175,36 +142,14 @@ function Features() {
             {Array(3)
               .fill('')
               .map((el, index) => (
-                <div key={index} className="space-y-[30px] md:w-[324.334px]">
-                  {purpleTriang}
-                  <div>
-                    <p style={{ fontWeight: 'bold' }} className="  mdText">
-                      Experience Surveys
-                    </p>
-                    <p className="smText">
-                      Create a profile in OSIO to engage the cheer community,
-                      offer coaching services to our network of{' '}
-                    </p>
-                  </div>
-                </div>
+                <LinkCard key={index} triang={purpleTriang}></LinkCard>
               ))}
           </div>
           <div className="  flex  py-[50px] md:py-[100px] justify-between md:flex-row flex-col">
             {Array(3)
               .fill('')
               .map((el, index) => (
-                <div key={index} className="space-y-[30px] md:w-[324.334px]">
-                  {blueTriang}
-                  <div>
-                    <p style={{ fontWeight: 'bold' }} className=" mdText">
-                      Experience Surveys
-                    </p>
-                    <p className="smText">
-                      Create a profile in OSIO to engage the cheer community,
-                      offer coaching services to our network of{' '}
-                    </p>
-                  </div>
-                </div>
+                <LinkCard key={index} triang={blueTriang}></LinkCard>
               ))}
           </div>
         </div>
