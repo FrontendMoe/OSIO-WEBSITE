@@ -9,6 +9,8 @@ import {
   purplePhoneShadow,
   purpleTriang,
 } from '../assets/icons'
+import videoTwo from '../assets/videoTwo.mp4'
+
 import Join from '../components/Join'
 import LinkCard from '../components/LinkCard'
 import Phone from '../components/Phone'
@@ -86,7 +88,14 @@ function Features() {
           <div className=" md:pt-[80px]  items-center md:space-x-[91px] space-y-[50px] md:space-y-0 md:py-[80px] flex md:flex-row flex-col  justify-between w-full ">
             <div className="h-fit w-fit  md:scale-100 scale-[80%]   relative flex md:pl-40  justify-center items-center">
               <div className="bg-[#9C7431] fade absolute right-40 md:left-0 -bottom-[15px] rounded-b-[100px] w-full h-[80%]"></div>
-              <Phone noShadow={true}></Phone>
+              <Phone
+                video={videoTwo}
+                high={150}
+                width={150}
+                left={0}
+                bottomShadow={false}
+                top={-42}
+              ></Phone>
             </div>
             <div className="md:w-1/2  space-y-[40px]">
               {Array(3)
