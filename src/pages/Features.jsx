@@ -99,7 +99,7 @@ function Features() {
         </div>
       </section>
       {/* Cheer Program */}
-      <section className="bg-[#F1DFB5] h-[80vh]  py-[50px] md:py-[100px] md:flex-row flex-col flex md:justify-between   md:min-h-screen relative">
+      <section className="bg-[#F1DFB5] h-[90vh]  py-[50px] md:py-[100px] md:flex-row flex-col flex md:justify-between   md:min-h-screen relative">
         <div className="flex sectionPadding  flex-col justify-center">
           <p className="sectionTitle">
             Cheer <br /> Program <br /> Staff
@@ -126,14 +126,14 @@ function Features() {
               coaching services to our network of{' '}
             </p>
           </div>
-          <div className="h-fit w-fit  md:scale-100 scale-50   -mt-[647px] md:-mt-[630px]  flex flex-col justify-end">
+          <div className="h-fit w-fit  md:scale-100 scale-[60%] pl-24 md:pl-0  -mt-[647px] md:-mt-[630px]  flex flex-col justify-end">
             <div className="h-fit    relative right-0 w-full flex justify-end ">
               <div className="bg-[#762C56]  fade w-[500px] absolute right-2  top-10 overflow-hidden h-[700px]   rounded-[100px]  "></div>{' '}
               <div className="w-fit right-0 ">
                 <Phone noShadow={true}></Phone>
               </div>
             </div>
-            <div className="  h-[600px] right-24 -top-[300px]  z-10 overflow-hidden w-[519.049px]   rounded-bl-[100px]   relative flex   justify-center items-center">
+            <div className="  h-[600px] right-24 -top-[300px]  z-10 overflow-hidden w-[519.049px]    rounded-bl-[100px]   relative flex   justify-center items-center">
               <div className="bg-[#9A9FCE] fade w-[800px] absolute right-2 bottom-0 overflow-hidden h-[400px]   rounded-[100px]  "></div>{' '}
               <div className="absolute  -bottom-[150px] -right-0">
                 <Phone noShadow={true}></Phone>
