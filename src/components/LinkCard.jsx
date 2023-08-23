@@ -1,6 +1,6 @@
 function LinkCard({ triang }) {
   return (
-    <div className="space-y-[30px] md:w-[324.334px]">
+    <div className="space-y-[30px] md:w-[324.334px] mb-10">
       {triang}
       <div>
         <p style={{ fontWeight: 'bold' }} className=" mdText">
