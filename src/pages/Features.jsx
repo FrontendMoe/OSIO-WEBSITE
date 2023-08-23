@@ -112,16 +112,12 @@ function Features() {
             {cheerProgramTriang}
           </div>
         </div>
-        <div className="h-fit  -mt-[200px] md:mt-0 md:scale-100 scale-[60%]  w-fit md:mr-[100px] -bottom-[100px] md:-bottom-[200px] relative flex md:pl-40 pl-20  justify-center items-center">
-          <div className="bg-[#762C56] fade w-[500px] absolute right-2  top-10 overflow-hidden h-[700px]   rounded-[100px]  "></div>{' '}
-          <Phone noShadow={true}></Phone>
-        </div>
       </section>
 
       {/* Facility Manager */}
-      <section className="bg-[#FFF3D8] sectionPadding min-h-screen">
-        <div className=" md:min-h-[70vh] flex md:flex-row flex-col-reverse  justify-around md:justify-between border-b-[3px] border-[#DBD3BA] ">
-          <div className="flex-1 py-[50px] md:mt-0 mt-[-300px]  flex-col justify-center">
+      <section className="bg-[#FFF3D8] relative sectionPadding min-h-screen">
+        <div className=" md:min-h-[70vh]  flex md:flex-row flex-col-reverse  justify-around items-center md:justify-between  border-b-[3px] border-[#DBD3BA] ">
+          <div className="flex-1 py-[50px] md:mt-0 mt-[-420px]  flex-col justify-center">
             <p className="sectionTitle ">
               Facility <br /> Managers
             </p>
@@ -130,10 +126,18 @@ function Features() {
               coaching services to our network of{' '}
             </p>
           </div>
-          <div className="  h-[600px]  md:scale-90 scale-[50%] overflow-hidden w-[519.049px] right-36 -top-[250px] md:-top-[210px] rounded-bl-[100px]   relative flex pl-40  justify-center items-center">
-            <div className="bg-[#9A9FCE] fade w-[800px] absolute right-2 bottom-0 overflow-hidden h-[400px]   rounded-[100px]  "></div>{' '}
-            <div className="absolute  -bottom-[150px] -right-0">
-              <Phone noShadow={true}></Phone>
+          <div className="h-fit w-fit  md:scale-100 scale-50   -mt-[647px] md:-mt-[630px]  flex flex-col justify-end">
+            <div className="h-fit    relative right-0 w-full flex justify-end ">
+              <div className="bg-[#762C56]  fade w-[500px] absolute right-2  top-10 overflow-hidden h-[700px]   rounded-[100px]  "></div>{' '}
+              <div className="w-fit right-0 ">
+                <Phone noShadow={true}></Phone>
+              </div>
+            </div>
+            <div className="  h-[600px] right-24 -top-[300px]  z-10 overflow-hidden w-[519.049px]   rounded-bl-[100px]   relative flex   justify-center items-center">
+              <div className="bg-[#9A9FCE] fade w-[800px] absolute right-2 bottom-0 overflow-hidden h-[400px]   rounded-[100px]  "></div>{' '}
+              <div className="absolute  -bottom-[150px] -right-0">
+                <Phone noShadow={true}></Phone>
+              </div>
             </div>
           </div>
         </div>
