@@ -24,7 +24,10 @@ function App() {
         setCurrentLink={setCurrentLink}
       ></Navbar>
       <Routes>
-        <Route path="/home" element={<Home></Home>}></Route>
+        <Route
+          path="/home"
+          element={<Home setCurrentLink={setCurrentLink}></Home>}
+        ></Route>
         <Route path="/Features" element={<Features></Features>}></Route>
         <Route path="/About" element={<About></About>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>

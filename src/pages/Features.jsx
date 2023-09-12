@@ -29,7 +29,10 @@ function Features() {
       </section>
       {/* Chear athletes */}
       <section className="bg-[#E2D9C0]  sectionPadding min-h-screen">
-        <div className="py-[50px] md:py-[100px] border-b border-[#00000040]">
+        <div
+          id="Athletes"
+          className="py-[50px] md:py-[100px] border-b border-[#00000040]"
+        >
           <p className="sectionTitle  pb-4">
             Cheer <br /> Athletes
           </p>
@@ -53,7 +56,10 @@ function Features() {
             </div>
           </div>
         </div>
-        <div className="py-[50px] md:py-[100px] border-b border-[#00000040]">
+        <div
+          id="Guardians"
+          className="py-[50px] md:py-[100px] border-b border-[#00000040]"
+        >
           <p className="sectionTitle  pb-4">
             Guardians <br /> &Child Athletes
           </p>
@@ -77,7 +83,10 @@ function Features() {
             </div>
           </div>
         </div>
-        <div className="py-[50px] md:py-[100px]  border-[#00000040]">
+        <div
+          id="Coaches"
+          className="py-[50px] md:py-[100px]  border-[#00000040]"
+        >
           <p className="sectionTitle  pb-4">
             Cheer Coaches & <br /> Trainers
           </p>
@@ -108,7 +117,10 @@ function Features() {
         </div>
       </section>
       {/* Cheer Program */}
-      <section className="bg-[#F1DFB5] h-[90vh]  py-[50px] md:py-[100px] md:flex-row flex-col flex md:justify-between   md:min-h-screen relative">
+      <section
+        id="CheerProgram"
+        className="bg-[#F1DFB5] h-[90vh]  py-[50px] md:py-[100px] md:flex-row flex-col flex md:justify-between   md:min-h-screen relative"
+      >
         <div className="flex sectionPadding  flex-col justify-center">
           <p className="sectionTitle">
             Cheer <br /> Program <br /> Staff
@@ -124,7 +136,10 @@ function Features() {
       </section>
 
       {/* Facility Manager */}
-      <section className="bg-[#FFF3D8] relative sectionPadding min-h-screen">
+      <section
+        id="Facility"
+        className="bg-[#FFF3D8] relative sectionPadding min-h-screen"
+      >
         <div className=" md:min-h-[70vh]  flex md:flex-row flex-col-reverse  justify-around items-center md:justify-between  border-b-[3px] border-[#DBD3BA] ">
           <div className="flex-1 py-[50px] md:mt-0 mt-[-420px]  flex-col justify-center">
             <p className="sectionTitle ">

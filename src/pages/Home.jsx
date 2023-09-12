@@ -42,7 +42,7 @@ import ExperienceSurvey from '../assets/ExperienceSurvey (2).png'
 //
 import collegiate from '../assets/Collegiate.png'
 import Card from '../components/Card'
-function Home() {
+function Home({ setCurrentLink }) {
   const playAllVideos = () => {
     const videos = document.querySelectorAll('video')
     for (let i = 0; i < videos.length; i++) {
@@ -281,7 +281,7 @@ function Home() {
                 coaching services to our network of{' '}
               </p>
             </div>
-            <ImageBolls></ImageBolls>
+            <ImageBolls setCurrentLink={setCurrentLink}></ImageBolls>
           </div>
           <div className="flex justify-center md:hidden">{verticalLineTwo}</div>
           <div>
@@ -292,7 +292,9 @@ function Home() {
 
             <div className="flex md:flex-row md:items-start items-center flex-col w-full justify-center mx-auto">
               <ImageBolls
+                setCurrentLink={setCurrentLink}
                 image={Parents}
+                link="Guardians"
                 title={
                   <>
                     Parents <br />& Guardians
@@ -306,7 +308,9 @@ function Home() {
                 {verticalLineTwo}
               </div>
               <ImageBolls
+                setCurrentLink={setCurrentLink}
                 image={Coaches}
+                link="Coaches"
                 title={
                   <>
                     Coaches <br />& Trainers
@@ -323,7 +327,9 @@ function Home() {
             </div>
             <div className="flex md:flex-row flex-col items-center md:items-end w-full justify-center mx-auto">
               <ImageBolls
+                setCurrentLink={setCurrentLink}
                 image={collegiate}
+                link="CheerProgram"
                 title={
                   <>
                     Collegiate <br />& AllStar <br />
@@ -338,7 +344,9 @@ function Home() {
                 {verticalLineTwo}
               </div>
               <ImageBolls
+                setCurrentLink={setCurrentLink}
                 image={training}
+                link="Facility"
                 title={
                   <>
                     Training <br />

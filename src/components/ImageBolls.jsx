@@ -1,5 +1,8 @@
 import benifits from '../assets/Benifits.png'
 import { BsArrowRight } from 'react-icons/bs'
+import { Link, useNavigate } from 'react-router-dom'
+import { scrollToSection } from '../utils/functions'
+
 function ImageBolls({
   image = benifits,
   title = (
@@ -7,9 +10,20 @@ function ImageBolls({
       Cheer <br /> Athletes
     </>
   ),
+  link = 'Athletes',
+  setCurrentLink,
 }) {
+  const navigate = useNavigate(null)
   return (
-    <div className="-space-y-36  w-[345.399px]">
+    <div
+      onClick={() => {
+        setCurrentLink('Features')
+        setTimeout(() => {
+          scrollToSection(link)
+        }, 200)
+      }}
+      className="-space-y-36 cursor-pointer  w-[345.399px]"
+    >
       <img
         src={image}
         alt=""
